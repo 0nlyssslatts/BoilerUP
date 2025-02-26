@@ -1,0 +1,26 @@
+:root {
+    --dark-background-color: #12191f;
+    --light-bacground-color: #e0e6ea;
+    --dark-text-color: #12191f;
+    --light-text-color: #ffffff;
+    --red-color: #ee5c44;
+    --light-gray-color: #d2d8dd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
