@@ -226,7 +226,8 @@
                     </p>
                 </div>
                 <article>
-                    <form id="contactForm">
+                    <p id="responseMessage1"></p>
+                    <form id="contactForm1">
                         <input
                             type="text"
                             name="name"
@@ -448,16 +449,34 @@
                         </div>
                     </div>
                     <article>
-                        <form action="">
-                            <input type="text" placeholder="ВВЕДИТЕ ВАШЕ ИМЯ" />
-                            <input type="tel" placeholder="НОМЕР ТЕЛЕФОНА" />
-                            <input type="email" placeholder="ВАШ E-MAIL" />
-                            <checkbox
-                                >Нажимая на кнопку “Получить консультацию”, я
-                                соглашаюсь с Политикой конфиденциальности
-                                компании.</checkbox
-                            >
-                            <input type="submit" />
+                        <p id="responseMessage2"></p>
+                        <form id="contactForm2">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                                required
+                            />
+                            <input
+                                type="tel"
+                                name="tel"
+                                placeholder="НОМЕР ТЕЛЕФОНА"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="ВАШ E-MAIL"
+                                required
+                            />
+                            <input type="checkbox" required />Нажимая на кнопку
+                            “Получить консультацию”, я соглашаюсь с Политикой
+                            конфиденциальности компании.
+                            <div>
+                                <button type="submit">
+                                    ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button
+                                ><img src="./img/arrowRight.png" alt="arrow" />
+                            </div>
                         </form>
                     </article>
                 </div>

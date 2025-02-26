@@ -13,9 +13,7 @@ app.use(express.static("./public"));
 
 app.post("/submit", (req, res) => {
     const { name, tel, email } = req.body;
-    console.log(name, tel, email);
     mailer(name, tel, email);
-
     res.json({ message: "Сообщение успешно отправлено!" });
 });
 
