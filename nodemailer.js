@@ -1,22 +1,23 @@
 const nodemailer = require("nodemailer");
+const dotenv = require("dotenv");
+dotenv.config();
 
 let transporter = nodemailer.createTransport({
-    host: "smtp.mail.ru",
-    port: 465,
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
     secure: true,
     auth: {
-        user: "assassin20_05@mail.ru", // Ваш полный адрес электронной почты на Mail.ru
-        pass: "yusCybpKpGDmTA2G8Z45", // Пароль от вашего почтового ящика
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS,
     },
 });
 
-async function mailer() {
+async function mailer(name, tel, email) {
     const info = await transporter.sendMail({
-        from: "Иван <assassin20_05@mail.ru>", // sender address
-        to: "sid36205@gmail.com", // list of receivers
-        subject: "Hello", // Subject line
-        text: "Hello world!", // plain text body
-        html: "<b>Hello world!!!</b>", // html body
+        from: `Сайт <${process.env.MAIL_USER}>`,
+        to: `${process.env.MAIL_USER}`,
+        subject: "Новый клиент",
+        text: `Имя: ${name}\nТелефон: ${tel}\nEmail: ${email}`,
     });
 
     console.log("Message sent: ", info.messageId);
