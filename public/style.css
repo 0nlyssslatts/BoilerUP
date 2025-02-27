@@ -224,6 +224,7 @@ header {
 
 /* MAIN */
 
+/* КОТЕЛЬНЫЕ */
 .bmk-card-wrapper {
     align-items: center;
 }
@@ -242,4 +243,24 @@ header {
 .bmk-card button {
     width: 100%;
 }
+/* ------- */
+
+/* УСЛУГИ */
+.service-wrapper {
+}
+.service {
+    align-items: center;
+}
+
+.sign-wrapper {
+    background-color: var(--dark-text-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ------ */
 /* ---- */
