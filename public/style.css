@@ -1,18 +1,82 @@
+/* VARIABLES */
 :root {
     --dark-background-color: #12191f;
     --light-bacground-color: #e0e6ea;
-    --dark-text-color: #12191f;
+    --dark-text-color: #2b3944;
     --light-text-color: #ffffff;
     --red-color: #ee5c44;
     --light-gray-color: #d2d8dd;
 }
+/* --------- */
+
+/* GLOBAL STYLES */
+
+html {
+    background-color: var(--light-bacground-color);
+}
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: circle;
+    padding: 1rem;
+}
+
+li::marker {
+    color: var(--red-color);
+    font-size: 1.25rem;
+}
+
+section {
+    width: 100%;
+}
+
+.dark-section {
+    background-color: var(--dark-background-color);
+    color: var(--light-text-color);
+}
+
+.light-section {
+    background-color: transparent;
+    color: var(--dark-text-color);
 }
 
 .flex-column {
@@ -24,3 +88,158 @@ body {
     display: flex;
     flex-direction: row;
 }
+
+.space-around {
+    justify-content: space-around;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+.no-list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no-link-style {
+    color: var(--dark-text-color);
+    text-decoration: none;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+button {
+    background-color: var(--red-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* -------------- */
+
+/* MEDIA */
+@media (min-width: 31.25rem) {
+}
+/* ----- */
+
+/* HEADER */
+
+header {
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+.desktop-nav {
+    display: none;
+}
+.mobile-nav {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--dark-background-color);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav-active {
+    visibility: visible;
+    opacity: 1;
+}
+.mobile-nav-active > div {
+    justify-content: center;
+    text-align: center;
+}
+
+.tel-wrapper {
+    background-color: var(--light-bacground-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* MENU BUTTON */
+.menu-icon {
+    z-index: 2;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-icon-line {
+    position: relative;
+    top: 50%;
+    width: 30px;
+    height: 5px;
+    background-color: var(--red-color);
+}
+
+.menu-icon-line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: var(--red-color);
+    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+}
+
+.menu-icon-line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: var(--red-color);
+    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+}
+/* ----------- */
+
+/* ------ */
+
+/* MAIN */
+
+.bmk-card-wrapper {
+    align-items: center;
+}
+.bmk-card {
+    background-color: var(--light-text-color);
+    width: 90%;
+    border-radius: 6px;
+}
+
+.bmk-card > img {
+    width: 100%;
+}
+.bmk-card > div {
+    padding: 1rem;
+}
+.bmk-card button {
+    width: 100%;
+}
+/* ---- */
