@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Druk Cyr";
+    src: url("DrukCyr-Bold.eot");
+    src: local("Druk Cyr Bold"), local("DrukCyr-Bold"),
+        url("DrukCyr-Bold.eot?#iefix") format("embedded-opentype"),
+        url("DrukCyr-Bold.woff2") format("woff2"),
+        url("DrukCyr-Bold.woff") format("woff"),
+        url("DrukCyr-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Druk Cyr";
+    src: url("DrukCyr-Super.eot");
+    src: local("Druk Cyr Super"), local("DrukCyr-Super"),
+        url("DrukCyr-Super.eot?#iefix") format("embedded-opentype"),
+        url("DrukCyr-Super.woff2") format("woff2"),
+        url("DrukCyr-Super.woff") format("woff"),
+        url("DrukCyr-Super.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

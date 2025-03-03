@@ -2,57 +2,51 @@
 :root {
     --dark-background-color: #12191f;
     --light-bacground-color: #e0e6ea;
-    --dark-text-color: #2b3944;
     --light-text-color: #ffffff;
     --red-color: #ee5c44;
-    --light-gray-color: #d2d8dd;
+    --dark-red-color: #8a271680;
 }
 /* --------- */
 
 /* GLOBAL STYLES */
 
 html {
-    background-color: var(--light-bacground-color);
+    background-color: var(--dark-background-color);
 }
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", serif;
-    font-weight: 400;
+    font-family: "Druk Cyr";
+    font-weight: normal;
     font-style: normal;
     width: 100vw;
     scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-}
-
 h1 {
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 1.75rem;
+    font-weight: bold;
 }
+
 h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-h3 {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-h4 {
-    font-weight: 400;
+.text-1 {
     font-size: 1rem;
+    font-weight: bold;
 }
-p {
+
+.text-2 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: normal;
+}
+
+h1,
+h2 {
+    margin: 0;
 }
 
 ul {
@@ -168,26 +162,26 @@ header {
 .menu-icon {
     z-index: 2;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
 }
 
 .menu-icon-line {
     position: relative;
     top: 50%;
-    width: 30px;
-    height: 5px;
+    width: 24px;
+    height: 4px;
     background-color: var(--red-color);
 }
 
 .menu-icon-line::before {
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -8px;
     content: "";
-    width: 30px;
-    height: 5px;
+    width: 24px;
+    height: 4px;
     background-color: var(--red-color);
     transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
@@ -195,10 +189,10 @@ header {
 .menu-icon-line::after {
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 8px;
     content: "";
-    width: 30px;
-    height: 5px;
+    width: 24px;
+    height: 4px;
     background-color: var(--red-color);
     transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
@@ -264,3 +258,5 @@ header {
 }
 /* ------ */
 /* ---- */
+
+@import url("./drukcyr/stylesheet.css");
