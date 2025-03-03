@@ -297,48 +297,64 @@
                     </article>
                 </div>
             </section>
-            <section class="light-section" style="display: none">
-                <div>
-                    <h2 class="h2">
+            <section class="dark-section">
+                <div class="mb-1">
+                    <h2 class="h1 mb-1">
                         Необходим подбор котельной на дизельном топливе?
                     </h2>
-                    <p>
+                    <p class="text-1">
                         Оставьте заявку и мы перезвоним вам, чтобы
                         проконсультировать по особенностям дизельных котельных и
                         помочь подобрать подходящий вариант.
                     </p>
                 </div>
-                <article>
+                <article class="form-section">
                     <p id="responseMessage1"></p>
                     <form id="contactForm1">
                         <input
+                            class="text-1"
                             type="text"
                             name="name"
                             placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
                             required
                         />
                         <input
+                            class="text-1"
                             type="tel"
                             name="tel"
                             placeholder="НОМЕР ТЕЛЕФОНА"
                             required
                         />
                         <input
+                            class="text-1"
                             type="email"
                             name="email"
                             placeholder="ВАШ E-MAIL"
                             required
                         />
-                        <input type="checkbox" required />Нажимая на кнопку
-                        “Получить консультацию”, я соглашаюсь с Политикой
-                        конфиденциальности компании.
                         <div>
-                            <button type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button
-                            ><img
-                                src="./img/arrowRight.webp"
-                                alt="arrow"
-                                loading="lazy"
+                            <input
+                                type="checkbox"
+                                required
+                                name="checkbox"
+                                class="text-2"
                             />
+                            <label for="checkbox" class="text-2 dark-text"
+                                >Нажимая на кнопку “Получить консультацию”, я
+                                соглашаюсь с
+                                <a
+                                    href=""
+                                    class="no-link-style"
+                                    style="text-decoration: underline"
+                                    >Политикой конфиденциальности компании</a
+                                >.</label
+                            >
+                        </div>
+
+                        <div>
+                            <button type="submit" class="h1">
+                                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                            </button>
                         </div>
                     </form>
                 </article>

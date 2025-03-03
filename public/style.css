@@ -134,6 +134,10 @@ section {
     gap: 1rem;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
 button {
     background-color: var(--red-color);
     color: var(--light-text-color);
@@ -165,6 +169,19 @@ button {
     filter: blur(50px);
 }
 
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input {
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: rgba(97, 98, 99, 0.22);
+    border: 1px solid rgba(155, 163, 185, 0.2);
+    color: var(--light-text-color);
+}
 /* -------------- */
 
 /* MEDIA */
