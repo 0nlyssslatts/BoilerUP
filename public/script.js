@@ -7,6 +7,9 @@ const navMobile = document.getElementById("mobile-nav");
 let navMobileState = false;
 //MAIN
 const main = document.getElementById("main");
+//BMK
+const buttons = document.querySelectorAll("#list-button");
+const bmks = document.querySelectorAll(".bmk-card-list");
 
 function formHandle(num) {
     return function (event) {
@@ -54,3 +57,24 @@ function closeMenu() {
     menuToggle.classList.remove("menu-icon-active");
     navMobile.classList.remove("mobile-nav-active");
 }
+
+buttons.forEach((button) => {
+    button.addEventListener("click", function (event) {
+        let dataId = event.target.getAttribute("data-id");
+        switch (dataId) {
+            case "1":
+                bmks[0].classList.toggle("bmk-card-list-active");
+                break;
+            case "2":
+                bmks[1].classList.toggle("bmk-card-list-active");
+                break;
+            case "3":
+                bmks[2].classList.toggle("bmk-card-list-active");
+                break;
+        }
+
+        event.target.innerText === "ПОДРОБНЕЕ"
+            ? (event.target.innerText = "СКРЫТЬ")
+            : (event.target.innerText = "ПОДРОБНЕЕ");
+    });
+});
