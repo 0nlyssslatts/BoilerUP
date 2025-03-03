@@ -1,4 +1,6 @@
 @import url("./drukcyr/stylesheet.css");
+@import url("./sf/stylesheet.css");
+
 /* VARIABLES */
 :root {
     --dark-background-color: #12191f;
@@ -22,11 +24,8 @@ html {
 }
 
 body {
-    font-family: "Druk Cyr";
     font-weight: 500;
     font-style: normal;
-    line-height: 2rem;
-    letter-spacing: 1px;
     width: 100%;
     scroll-behavior: smooth;
 }
@@ -35,24 +34,30 @@ body {
     font-family: "Druk Cyr";
     font-size: 1.75rem;
     font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.75rem;
 }
 
 .h2 {
     font-family: "Druk Cyr";
     font-size: 1.25rem;
     font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.75rem;
 }
 
 .text-1 {
-    font-family: "Druk Cyr";
+    font-family: "SF Pro Display";
     font-size: 1rem;
     font-weight: 500;
+    line-height: 1.25rem;
 }
 
 .text-2 {
-    font-family: "Druk Cyr";
+    font-family: "SF Pro Display";
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: normal;
+    line-height: 1.25rem;
 }
 
 h1,
@@ -140,6 +145,24 @@ button {
 .img-wrapper {
     width: 100%;
     height: 100%;
+    position: relative;
+}
+
+.blick {
+    position: absolute;
+    z-index: -1;
+    top: 5rem;
+    left: -1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background: radial-gradient(
+        85.27% 55.44% at 15.33% 40.66%,
+        #ffba39 0%,
+        rgba(238, 92, 68, 0.5) 52.5%
+    );
+
+    filter: blur(50px);
 }
 
 /* -------------- */
@@ -239,6 +262,7 @@ header {
 /* ------ */
 
 /* MAIN */
+/* section */
 .red-container {
     width: 100%;
     height: auto;
@@ -254,11 +278,12 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 15rem);
     overflow-x: auto;
+    gap: 1rem;
 }
 
 .frst-carousel-item {
-    width: 220px;
-    height: 160px;
+    width: 15rem;
+    height: 100%;
     border-radius: 12px;
     padding: 12px;
     background-color: #1f2529;
@@ -289,4 +314,39 @@ header {
     position: absolute;
     bottom: 0;
 }
+/*         */
+/* section */
+.dark-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.scnd-carousel {
+    height: 10rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 15rem);
+    overflow-x: auto;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.scnd-carousel-item {
+    width: 15rem;
+    height: 100%;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.container-black {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    right: 0;
+    top: 0.5rem;
+}
+
+.get-discount {
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+/*         */
 /* ---- */
