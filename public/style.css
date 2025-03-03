@@ -1,3 +1,4 @@
+@import url("./drukcyr/stylesheet.css");
 /* VARIABLES */
 :root {
     --dark-background-color: #12191f;
@@ -18,59 +19,68 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Druk Cyr";
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
+    line-height: 2rem;
+    letter-spacing: 1px;
     width: 100vw;
     scroll-behavior: smooth;
 }
 
-h1 {
+.h1 {
+    font-family: "Druk Cyr";
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-h2 {
+.h2 {
+    font-family: "Druk Cyr";
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .text-1 {
+    font-family: "Druk Cyr";
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .text-2 {
+    font-family: "Druk Cyr";
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
 ul {
-    list-style-type: circle;
+    list-style-type: disc;
     padding: 1rem;
 }
 
 li::marker {
-    color: var(--red-color);
-    font-size: 1.25rem;
+    color: var(--dark-background-color);
+    font-size: 0.75rem;
 }
 
 section {
     width: 100%;
+    padding: 1rem;
 }
 
 .dark-section {
-    background-color: var(--dark-background-color);
+    background-color: transparent;
     color: var(--light-text-color);
 }
 
 .light-section {
-    background-color: transparent;
-    color: var(--dark-text-color);
+    background-color: var(--light-bacground-color);
+    color: var(--dark-background-color);
 }
 
 .flex-column {
@@ -88,6 +98,11 @@ section {
 }
 .space-between {
     justify-content: space-between;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .no-list-style {
@@ -109,7 +124,14 @@ button {
     background-color: var(--red-color);
     color: var(--light-text-color);
     padding: 1rem;
-    border-radius: 6px;
+    width: 100%;
+    border: 0;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 /* -------------- */
@@ -134,13 +156,22 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease-out;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    background-color: var(--dark-background-color);
-    width: 100vw;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border-radius: 10px;
+}
+
+.socials {
+    padding-bottom: 1rem;
+}
+
+.blur {
+    opacity: 0.5;
 }
 
 .mobile-nav-active {
@@ -183,7 +214,6 @@ header {
     width: 24px;
     height: 4px;
     background-color: var(--red-color);
-    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
 
 .menu-icon-line::after {
@@ -194,69 +224,57 @@ header {
     width: 24px;
     height: 4px;
     background-color: var(--red-color);
-    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
 }
 
-.menu-icon.menu-icon-active .menu-icon-line {
-    background-color: transparent;
-}
-
-.menu-icon.menu-icon-active .menu-icon-line::before {
-    transform: rotate(45deg);
-    top: 0;
-    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
-}
-
-.menu-icon.menu-icon-active .menu-icon-line::after {
-    transform: rotate(-45deg);
-    top: 0;
-    transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
-}
 /* ----------- */
 
 /* ------ */
 
 /* MAIN */
-
-/* КОТЕЛЬНЫЕ */
-.bmk-card-wrapper {
-    align-items: center;
-}
-.bmk-card {
-    background-color: var(--light-text-color);
-    width: 90%;
-    border-radius: 6px;
+.red-container {
+    position: absolute;
+    z-index: -1;
 }
 
-.bmk-card > img {
+.frst-carousel {
+    height: 12rem;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 15rem);
+    grid-template-rows: 10rem;
+    overflow-x: auto;
+    grid-column-gap: 2rem;
+}
+
+.frst-carousel-item {
+    width: 240px;
+    height: 160px;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.red-item {
+    background-color: var(--red-color);
+}
+
+.red-item-link {
+    display: block;
+    position: relative;
     width: 100%;
-}
-.bmk-card > div {
-    padding: 1rem;
-}
-.bmk-card button {
-    width: 100%;
-}
-/* ------- */
-
-/* УСЛУГИ */
-.service-wrapper {
-}
-.service {
-    align-items: center;
+    height: 100%;
 }
 
-.sign-wrapper {
-    background-color: var(--dark-text-color);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.red-item-link img {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-/* ------ */
+
+.red-item-link h2 {
+    position: absolute;
+    bottom: 0;
+}
 /* ---- */
-
-@import url("./drukcyr/stylesheet.css");

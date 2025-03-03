@@ -5,6 +5,8 @@ const form2 = document.getElementById("contactForm2");
 const menuToggle = document.getElementById("menu-toggle");
 const navMobile = document.getElementById("mobile-nav");
 let navMobileState = false;
+//MAIN
+const main = document.getElementById("main");
 
 function formHandle(num) {
     return function (event) {
@@ -38,6 +40,7 @@ menuToggle.onclick = function () {
     navMobileState = !navMobileState;
     menuToggle.classList.toggle("menu-icon-active");
     navMobile.classList.toggle("mobile-nav-active");
+    main.classList.toggle("blur");
 };
 
 window.addEventListener("resize", function () {

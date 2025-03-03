@@ -66,44 +66,28 @@
                 </div>
             </div>
             <div id="mobile-nav" class="mobile-nav">
-                <div class="flex-column gap-1">
-                    <nav>
-                        <ul class="no-list-style flex-column gap-1">
-                            <li>КОТЕЛЬНЫЕ В АРЕНДУ</li>
-                            <li>УСЛУГИ</li>
-                            <li>О КОМПАНИИ</li>
-                            <li>ПРЕИМУЩЕСТВА</li>
-                            <li>КОНТАКТЫ</li>
-                        </ul>
-                    </nav>
-                    <div class="flex-column gap-1">
-                        <div class="flex-row space-between">
-                            <img
-                                src="./img/tg.webp"
-                                alt="telegram"
-                                width="41"
-                                height="41"
-                            />
-                            <img
-                                src="./img/watsup.webp"
-                                alt="whatsup"
-                                width="41"
-                                height="41"
-                            />
-                            <img
-                                src="./img/mail.webp"
-                                alt="email"
-                                width="41"
-                                height="41"
-                            />
-                        </div>
+                <div class="flex-column gap-1 mobile-nav-wrapper">
+                    <button class="h1">ОСТАВИТЬ ЗАЯВКУ</button>
 
-                        <div class="tel-wrapper">
-                            <a class="no-link-style" href="tel:+79859224765"
-                                >+7 985 922 47 65</a
-                            >
-                        </div>
-                        <button>ОСТАВИТЬ ЗАЯВКУ</button>
+                    <div class="flex-row space-around socials">
+                        <img
+                            src="./img/tg.webp"
+                            alt="telegram"
+                            width="41"
+                            height="41"
+                        />
+                        <img
+                            src="./img/watsup.webp"
+                            alt="whatsup"
+                            width="41"
+                            height="41"
+                        />
+                        <img
+                            src="./img/mail.webp"
+                            alt="email"
+                            width="41"
+                            height="41"
+                        />
                     </div>
                 </div>
             </div>
@@ -111,36 +95,58 @@
                 <div class="menu-icon-line"></div>
             </div>
         </header>
-        <main>
-            <section class="dark-section">
-                <h1>Аренда и продажа блочно-модульных котельных</h1>
-                <div>
-                    <article>
-                        <a href="#"><h2>Подобрать котельную</h2></a>
-                        <img src="./img/arrowTopRight.webp" alt="Стрелка" />
+        <main id="main">
+            <section class="dark-section flex-column">
+                <div class="grid-2">
+                    <h1 class=".h1">
+                        Аренда и продажа блочно-модульных котельных
+                    </h1>
+                    <div class="img-wrapper">
+                        <img
+                            src="./img/containerRed.webp"
+                            alt="Красный контейнер"
+                            width="160px"
+                            height="auto"
+                            class="red-container"
+                        />
+                    </div>
+                </div>
+
+                <div class="frst-carousel">
+                    <article class="frst-carousel-item red-item">
+                        <a
+                            class="red-item-link no-link-style"
+                            href="#contactForm2"
+                        >
+                            <img
+                                src="./img/arrowTopRight.webp"
+                                alt="Стрелка"
+                                width="24px"
+                                height="24px"
+                            />
+                            <h2 class="h1">ПОДОБРАТЬ КОТЕЛЬНУЮ</h2>
+                        </a>
                     </article>
-                    <article>
-                        <h2>Фиксированная цена на топливо</h2>
-                        <p>забудьте о колебаниях цен в течение всего сезона</p>
+                    <article class="frst-carousel-item">
+                        <h2 class="h1">Фиксированная цена на топливо</h2>
+                        <p class="text-1">
+                            забудьте о колебаниях цен в течение всего сезона
+                        </p>
                     </article>
-                    <article>
-                        <h2>20% скидка</h2>
-                        <p>на аренду модульных котельных</p>
+                    <article class="frst-carousel-item">
+                        <h2 class="h1">20% скидка</h2>
+                        <p class="text-1">на аренду модульных котельных</p>
                     </article>
-                    <article>
-                        <h2>Бесплатная доставка готовой котельной</h2>
+                    <article class="frst-carousel-item">
+                        <h2 class="h1">
+                            Бесплатная доставка готовой котельной
+                        </h2>
                     </article>
                 </div>
-                <img
-                    src="./img/containerRed.webp"
-                    alt="Красный контейнер"
-                    width="100px"
-                    height="100px"
-                />
             </section>
             <section class="dark-section">
                 <div>
-                    <h2>Аренда дизельных котельных в Москве и МО</h2>
+                    <h2 class="h2">Аренда дизельных котельных в Москве и МО</h2>
                     <p>
                         Компания BoilerUp предлагает удобное и эффективное
                         решение для теплоснабжения на различных объектах с
@@ -173,7 +179,7 @@
                 <div>
                     <article>
                         <div>
-                            <h3>
+                            <h3 class="text-1">
                                 Бесплатный выезд специалиста на осмотр объекта
                             </h3>
                         </div>
@@ -223,7 +229,7 @@
             </section>
             <section class="light-section">
                 <div>
-                    <h2>
+                    <h2 class="h2">
                         Все котельные оборудованы современной автоматикой
                         безопасности
                     </h2>
@@ -329,7 +335,9 @@
             </section>
             <section class="light-section">
                 <div>
-                    <h2>Необходим подбор котельной на дизельном топливе?</h2>
+                    <h2 class="h2">
+                        Необходим подбор котельной на дизельном топливе?
+                    </h2>
                     <p>
                         Оставьте заявку и мы перезвоним вам, чтобы
                         проконсультировать по особенностям дизельных котельных и
@@ -372,7 +380,7 @@
                 </article>
             </section>
             <section class="dark-section">
-                <h2>УСЛУГИ BOILERUP</h2>
+                <h2 class="h2">УСЛУГИ BOILERUP</h2>
                 <div class="service-wrapper flex-column gap-1">
                     <article class="service flex-row space-between">
                         <h3>ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</h3>
@@ -428,7 +436,7 @@
             <section class="dark-section">
                 <div>
                     <div>
-                        <h2>О КОМПАНИИ</h2>
+                        <h2 class="h2">О КОМПАНИИ</h2>
                         <p>
                             Мы являемся дочерней компанией ДИМАРТ, которая более
                             16 лет успешно работает на рынке, зарекомендовав
@@ -462,7 +470,7 @@
                 </div>
             </section>
             <section class="dark-section">
-                <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+                <h2 class="h2">НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div>
                     <article>
                         <h3>КРУГЛОСУТОЧНАЯ ДИСПЕТЧЕРСКАЯ СЛУЖБА</h3>
@@ -532,7 +540,7 @@
             <section class="light-section">
                 <div>
                     <div>
-                        <h2>НАШИ ПАРТНЕРЫ</h2>
+                        <h2 class="h2">НАШИ ПАРТНЕРЫ</h2>
                         <p>
                             Мы работаем на рынке аренды дизельных котельных
                             более 5 лет, поэтому нам доверяют крупные и
@@ -591,7 +599,7 @@
             </section>
             <section class="light-section">
                 <div>
-                    <h2>КОНТАКТЫ</h2>
+                    <h2 class="h2">КОНТАКТЫ</h2>
                     <img
                         src="./img/containerGray.webp"
                         alt="Серый контейнер"
