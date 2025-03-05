@@ -14,14 +14,11 @@
 
         <meta name="robots" content="index, follow" />
 
-        <link rel="canonical" href="https://boilerup/" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap"
             rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link rel="canonical" href="https://boilerup/" />
         <link rel="stylesheet" href="./style.css" />
         <script src="./script.js" type="module" defer></script>
         <title>BoilerUP</title>
@@ -360,9 +357,16 @@
                 </article>
             </section>
             <section class="dark-section">
-                <h2 class="h1">УСЛУГИ BOILERUP</h2>
+                <div class="blick"></div>
+                <h2 class="h1">
+                    УСЛУГИ BOILER<span class="red-text">UP</span>
+                </h2>
                 <div class="service-wrapper flex-column gap-1">
-                    <article class="flex-column space-around">
+                    <article
+                        data-num="1"
+                        id="service"
+                        class="flex-column space-around"
+                    >
                         <div class="flex-row space-between">
                             <h3 class="h2">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</h3>
                             <div class="sign-wrapper">
@@ -373,10 +377,24 @@
                                 />
                             </div>
                         </div>
-                        <p class="text-1"></p>
+                        <p id="service-text" class="text-1 service-text">
+                            Мы предоставляем широкий спектр услуг по
+                            обслуживанию котельного оборудования. Наши
+                            квалифицированные специалисты выполняют плановое
+                            техническое обслуживание, включая очистку,
+                            диагностику и настройку ключевых узлов и систем. Мы
+                            также оперативно выявляем и устраняем возможные
+                            неисправности, чтобы предотвратить серьезные поломки
+                            и гарантировать стабильную и безопасную работу вашей
+                            отопительной системы.
+                        </p>
                     </article>
 
-                    <article class="flex-column space-around">
+                    <article
+                        data-num="2"
+                        id="service"
+                        class="flex-column space-around"
+                    >
                         <div class="flex-row space-between">
                             <h3 class="h2">ТОПЛИВО ДЛЯ КОТЕЛЬНОЙ</h3>
                             <div class="sign-wrapper">
@@ -387,8 +405,26 @@
                                 />
                             </div>
                         </div>
+                        <p id="service-text" class="text-1 service-text">
+                            Мы рады предложить вам топливо для блочно модульных
+                            котельных с фиксированной ценой на весь отопительный
+                            сезон. Это решение позволяет вам избежать
+                            неожиданных расходов и планировать бюджет на
+                            отопление с уверенностью. Наш надежный партнер,
+                            компания Димарт, имеет более 16 лет опыта в
+                            поставках нефтегазовых продуктов. За это время они
+                            зарекомендовали себя как ведущий игрок на рынке,
+                            обеспечивая клиентов высококачественным топливом и
+                            отличным сервисом. Благодаря этому сотрудничеству мы
+                            можем гарантировать не только стабильные поставки,
+                            но и высокую степень надежности и безопасности.
+                        </p>
                     </article>
-                    <article class="flex-column space-around">
+                    <article
+                        data-num="3"
+                        id="service"
+                        class="flex-column space-around"
+                    >
                         <div class="flex-row space-between">
                             <h3 class="h2">ПУСКО-НАЛАДОЧНЫЕ РАБОТЫ</h3>
                             <div class="sign-wrapper">
@@ -399,9 +435,23 @@
                                 />
                             </div>
                         </div>
-                        <p class="text-1"></p>
+                        <p id="service-text" class="text-1 service-text">
+                            Наши квалифицированные специалисты выполняют
+                            профессиональные пуско-наладочные работы для
+                            котельного оборудования. Мы детально настраиваем и
+                            тестируем все рабочие параметры, чтобы обеспечить
+                            максимальную эффективность и надежность системы. В
+                            рамках пуско-наладочных мероприятий мы также обучаем
+                            персонал Заказчика правилам эксплуатации и
+                            эффективному использованию оборудования, чтобы
+                            гарантировать его безопасную и стабильную работу.
+                        </p>
                     </article>
-                    <article class="flex-column space-around">
+                    <article
+                        data-num="4"
+                        id="service"
+                        class="flex-column space-around"
+                    >
                         <div class="flex-row space-between">
                             <h3 class="h2">ДОСТАВКА МОДУЛЬНЫХ КОТЕЛЬНЫХ</h3>
                             <div class="sign-wrapper">
@@ -412,7 +462,24 @@
                                 />
                             </div>
                         </div>
-                        <p class="text-1"></p>
+                        <p id="service-text" class="text-1 service-text">
+                            Мы осуществляем
+                            <b
+                                >бесплатную доставку блочно-модульных
+                                котельных</b
+                            >
+                            в пределах Москвы и Московской области, используя
+                            собственные транспортные средства. Это позволяет нам
+                            гарантировать быструю и безопасную транспортировку
+                            оборудования непосредственно к вашему объекту, без
+                            дополнительных затрат для вас. Наша команда
+                            профессионалов обеспечивает не только доставку, но и
+                            полное сопровождение процесса, начиная с момента
+                            заказа и заканчивая установкой котельной. Мы
+                            понимаем, насколько важно для вас получить
+                            оборудование в кратчайшие сроки, поэтому организуем
+                            доставку с учетом всех ваших требований и сроков.
+                        </p>
                     </article>
                 </div>
             </section>

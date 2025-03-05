@@ -60,6 +60,10 @@ body {
     line-height: 1.25rem;
 }
 
+.red-text {
+    color: var(--red-color);
+}
+
 /* h1,
 h2,
 h3,
@@ -80,6 +84,7 @@ li::marker {
 section {
     width: 100%;
     padding: 0.5rem;
+    position: relative;
 }
 
 .dark-section {
@@ -156,10 +161,10 @@ button {
 .blick {
     position: absolute;
     z-index: -1;
-    top: 5rem;
+    top: -1rem;
     left: -1rem;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     border-radius: 50%;
     background: radial-gradient(
         85.27% 55.44% at 15.33% 40.66%,
@@ -409,6 +414,29 @@ header {
 /* section */
 .service-wrapper {
     margin: 1rem 0;
+}
+
+.sign-wrapper {
+    display: flex;
+    background-color: #262b30;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-wrapper img {
+    width: 0.75rem;
+    height: auto;
+}
+
+.service-text {
+    display: none;
+}
+
+.service-text-active {
+    display: block;
 }
 /* ------- */
 /* ---- */
