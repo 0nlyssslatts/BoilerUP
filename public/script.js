@@ -13,6 +13,7 @@ const bmks = document.querySelectorAll(".bmk-card-list");
 //SERVICE
 const service = document.querySelectorAll("#service");
 const serviceText = document.querySelectorAll("#service-text");
+const sign = document.querySelectorAll("#sign");
 
 function formHandle(num) {
     return function (event) {
@@ -64,7 +65,7 @@ function closeMenu() {
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
         let dataId = event.target.getAttribute("data-id");
-        console.log(dataId);
+
         switch (dataId) {
             case "1":
                 bmks[0].classList.toggle("bmk-card-list-active");
@@ -92,26 +93,35 @@ buttons.forEach((button) => {
 service.forEach((element) => {
     element.addEventListener("click", function (event) {
         let dataNum = element.getAttribute("data-num");
+        console.log();
         switch (dataNum) {
             case "1":
                 serviceText[0].classList.toggle("service-text-active");
                 serviceText[0].classList.toggle("animate__animated");
                 serviceText[0].classList.toggle("animate__fadeIn");
+                sign[0].classList.toggle("sign-wrapper-active");
+                sign[0].children[0].classList.toggle("rotate");
                 break;
             case "2":
                 serviceText[1].classList.toggle("service-text-active");
                 serviceText[1].classList.toggle("animate__animated");
                 serviceText[1].classList.toggle("animate__fadeIn");
+                sign[1].classList.toggle("sign-wrapper-active");
+                sign[1].children[0].classList.toggle("rotate");
                 break;
             case "3":
                 serviceText[2].classList.toggle("service-text-active");
                 serviceText[2].classList.toggle("animate__animated");
                 serviceText[2].classList.toggle("animate__fadeIn");
+                sign[2].classList.toggle("sign-wrapper-active");
+                sign[2].children[0].classList.toggle("rotate");
                 break;
             case "4":
                 serviceText[3].classList.toggle("service-text-active");
                 serviceText[3].classList.toggle("animate__animated");
                 serviceText[3].classList.toggle("animate__fadeIn");
+                sign[3].classList.toggle("sign-wrapper-active");
+                sign[4].children[0].classList.toggle("rotate");
                 break;
         }
     });

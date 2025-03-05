@@ -175,6 +175,23 @@ button {
     filter: blur(50px);
 }
 
+.blick2 {
+    position: absolute;
+    z-index: -1;
+    top: -1rem;
+    left: -1rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: radial-gradient(
+        85.27% 55.44% at 15.33% 40.66%,
+        #ffba39 0%,
+        rgba(238, 92, 68, 0.5) 52.5%
+    );
+
+    filter: blur(50px);
+}
+
 .form-section form {
     display: flex;
     flex-direction: column;
@@ -187,6 +204,10 @@ form input {
     background-color: rgba(97, 98, 99, 0.22);
     border: 1px solid rgba(155, 163, 185, 0.2);
     color: var(--light-text-color);
+}
+
+.rotate {
+    transform: rotate(45deg);
 }
 /* -------------- */
 
@@ -424,6 +445,10 @@ header {
     height: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+.sign-wrapper-active {
+    background-color: var(--red-color);
 }
 
 .sign-wrapper img {
