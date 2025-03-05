@@ -19,6 +19,13 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 html {
     background-color: var(--dark-background-color);
 }
@@ -63,13 +70,6 @@ body {
 
 .red-text {
     color: var(--red-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
 }
 
 ul {
@@ -151,6 +151,7 @@ button {
     width: 100%;
     border-radius: 12px;
     border: 0;
+    margin: 0;
 }
 
 .img-wrapper {
@@ -245,9 +246,6 @@ header {
 
 .socials {
     padding-bottom: 1.5rem;
-}
-
-.blur {
 }
 
 .mobile-nav-active {
@@ -418,6 +416,7 @@ header {
 
 .bmk-card button {
     border-radius: 0 0 12px 12px;
+    margin-bottom: 0;
 }
 
 .bmk-card-content {
@@ -436,6 +435,11 @@ header {
 /* section */
 .service-wrapper {
     margin: 1rem 0;
+}
+
+.service-wrapper article {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .sign-wrapper {
