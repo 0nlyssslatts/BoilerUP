@@ -478,4 +478,23 @@ header {
     display: block;
 }
 /* ------- */
+/* section */
+.thrd-carousel {
+    height: 15rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 15rem);
+    overflow-x: auto;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.thrd-carousel-item {
+    width: 15rem;
+    height: 100%;
+    border-radius: 12px;
+    padding: 12px;
+    background-color: #262b30;
+}
+/* ------- */
 /* ---- */
