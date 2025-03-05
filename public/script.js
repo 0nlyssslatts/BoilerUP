@@ -14,6 +14,9 @@ const bmks = document.querySelectorAll(".bmk-card-list");
 const service = document.querySelectorAll("#service");
 const serviceText = document.querySelectorAll("#service-text");
 const sign = document.querySelectorAll("#sign");
+//ABOUT
+const aboutText = document.getElementById("about-text");
+const aboutButton = document.getElementById("about-button");
 
 function formHandle(num) {
     return function (event) {
@@ -125,4 +128,14 @@ service.forEach((element) => {
                 break;
         }
     });
+});
+
+aboutButton.addEventListener("click", function (event) {
+    aboutText.classList.toggle("about-active");
+    aboutText.classList.toggle("animate__animated");
+    aboutText.classList.toggle("animate__fadeIn");
+
+    event.target.innerText === "ПОДРОБНЕЕ"
+        ? (event.target.innerText = "СКРЫТЬ")
+        : (event.target.innerText = "ПОДРОБНЕЕ");
 });
