@@ -18,6 +18,50 @@ const sign = document.querySelectorAll("#sign");
 const aboutText = document.getElementById("about-text");
 const aboutButton = document.getElementById("about-button");
 
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function animateScrollingElements() {
+    const elements = document.querySelectorAll(
+        ".element-to-animate-left, .element-to-animate-right, .element-to-animate"
+    );
+    elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            if (element.classList.contains("element-to-animate-left")) {
+                element.classList.add(
+                    "animate__animated",
+                    "animate__fadeInLeft",
+                    "animate__slow"
+                );
+            } else if (element.classList.contains("element-to-animate-right")) {
+                element.classList.add(
+                    "animate__animated",
+                    "animate__fadeInRight",
+                    "animate__slow"
+                );
+            } else {
+                element.classList.add(
+                    "animate__animated",
+                    "animate__fadeIn",
+                    "animate__slow"
+                );
+            }
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", animateScrollingElements);
+window.addEventListener("scroll", animateScrollingElements);
+
 function formHandle(num) {
     return function (event) {
         event.preventDefault();
@@ -47,14 +91,25 @@ form1.addEventListener("submit", formHandle(1));
 form2.addEventListener("submit", formHandle(2));
 
 menuToggle.onclick = function () {
-    navMobileState = !navMobileState;
-    menuToggle.classList.toggle("menu-icon-active");
-    navMobile.classList.toggle("mobile-nav-active");
-    main.classList.toggle("blur");
+    navMobileState = true;
+    menuToggle.classList.add("menu-icon-active");
+    navMobile.classList.add("mobile-nav-active");
 };
 
 window.addEventListener("resize", function () {
     if (navMobileState && window.innerWidth >= 840) {
+        closeMenu();
+    }
+});
+
+window.addEventListener("scroll", () => {
+    if (navMobileState) {
+        closeMenu();
+    }
+});
+
+main.addEventListener("click", function (event) {
+    if (navMobileState) {
         closeMenu();
     }
 });

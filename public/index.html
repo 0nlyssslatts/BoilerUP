@@ -61,7 +61,9 @@
             </div>
             <div id="mobile-nav" class="mobile-nav">
                 <div class="flex-column gap-1 mobile-nav-wrapper">
-                    <button class="h1">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <a href="#scrollToForm"
+                        ><button class="h1">ОСТАВИТЬ ЗАЯВКУ</button></a
+                    >
 
                     <div class="flex-row space-around socials">
                         <img
@@ -93,7 +95,7 @@
             <section class="dark-section grid-2row">
                 <div class="blick"></div>
                 <div class="grid-2column">
-                    <h1 class="h1">
+                    <h1 class="h1 element-to-animate-left">
                         АРЕНДА И ПРОДАЖА БЛОЧНО-МОДУЛЬНЫХ КОТЕЛЬНЫХ
                     </h1>
                     <div class="img-wrapper">
@@ -102,7 +104,7 @@
                             alt="Красный контейнер"
                             width="250px"
                             height="auto"
-                            class="red-container"
+                            class="red-container element-to-animate-right"
                         />
                     </div>
                 </div>
@@ -111,7 +113,7 @@
                     <article class="frst-carousel-item red-item">
                         <a
                             class="red-item-link no-link-style"
-                            href="#contactForm2"
+                            href="#scrollToForm"
                         >
                             <img
                                 src="./img/arrowTopRight.webp"
@@ -140,11 +142,11 @@
                 </div>
             </section>
             <section class="dark-section">
-                <h2 class="h1">
+                <h2 class="h1 element-to-animate">
                     АРЕНДА ДИЗЕЛЬНЫХ КОТЕЛЬНЫХ
                     <br /><span class="h2 dark-text">МОСКВЕ И МО</span>
                 </h2>
-                <p class="text-1">
+                <p class="text-1 element-to-animate">
                     Компания BoilerUp предлагает удобное и эффективное решение
                     для теплоснабжения на различных объектах с помощью блочно -
                     модульных котельных (БМК), которые становятся все более
@@ -157,7 +159,7 @@
                         loading="lazy"
                         width="100px"
                         height="100px"
-                        class="container-black"
+                        class="container-black element-to-animate-right"
                     />
                 </div>
 
@@ -191,7 +193,9 @@
                     сервисное обслуживание и поставка топлива.
                 </p>
                 <button class="get-discount">
-                    <a class="h1 no-link-style" href="#">ПОЛУЧИТЬ СКИДКУ</a>
+                    <a class="h1 no-link-style" href="#scrollToForm"
+                        >ПОЛУЧИТЬ СКИДКУ</a
+                    >
                 </button>
             </section>
             <section class="light-section">
@@ -212,7 +216,7 @@
                             <h3 class="h1">БМК—1250</h3>
                             <h4 class="text-1">Блочно-модульная котельная</h4>
                             <ul
-                                class="bmk-card-list bmk-card-list-active animate__animated animate__fadeIn"
+                                class="bmk-card-list bmk-card-list-active animate__animated animate__fadeIn text-2"
                                 data-id="1"
                             >
                                 <li>
@@ -244,7 +248,7 @@
                         <div class="bmk-card-content">
                             <h3 class="h1">БМК—1500</h3>
                             <h4 class="text-1">Блочно-модульная котельная</h4>
-                            <ul class="bmk-card-list" data-id="2">
+                            <ul class="bmk-card-list text-2" data-id="2">
                                 <li>
                                     Котел Unical, номинальной
                                     теплопроизводительностью 1570-1850 кВт
@@ -275,7 +279,7 @@
                             <h3 class="h1">БМК—2000</h3>
                             <h4 class="text-1">Блочно-модульная котельная</h4>
 
-                            <ul class="bmk-card-list" data-id="3">
+                            <ul class="bmk-card-list text-2" data-id="3">
                                 <li>
                                     Котел Wiesberg, номинальной
                                     теплопроизводительностью 1700-2050 кВт
@@ -309,7 +313,7 @@
                     </p>
                 </div>
                 <article class="form-section">
-                    <p id="responseMessage1"></p>
+                    <p id="responseMessage1" class="text-2"></p>
                     <form id="contactForm1">
                         <input
                             class="text-1"
@@ -351,11 +355,9 @@
                             >
                         </div>
 
-                        <div>
-                            <button type="submit" class="h1">
-                                ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
-                            </button>
-                        </div>
+                        <button type="submit" class="h1">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        </button>
                     </form>
                 </article>
             </section>
@@ -619,116 +621,143 @@
                     </article>
                 </div>
             </section>
-            <section class="light-section" style="display: none">
-                <div>
-                    <h2 class="h2">КОНТАКТЫ</h2>
+            <section class="light-section">
+                <div class="big">
+                    <h2 class="h1">КОНТАКТЫ</h2>
                     <img
                         src="./img/containerGray.webp"
                         alt="Серый контейнер"
                         loading="lazy"
-                        width="100px"
-                        height="100px"
+                        width="300px"
+                        height="auto"
                     />
                 </div>
-                <div>
-                    <div>
-                        <div>
-                            <h3>КОНТАКТНЫЕ ДАННЫЕ</h3>
-                            <img
-                                src="./img/tg.webp"
-                                alt="telegram"
-                                loading="lazy"
-                            />
-                            <img
-                                src="./img/watsup.webp"
-                                alt="whatsup"
-                                loading="lazy"
-                            />
-                            <img
-                                src="./img/mail.webp"
-                                alt="email"
-                                loading="lazy"
-                            />
-                        </div>
-                        <div>
-                            <article>
-                                <p>ТЕЛ:</p>
-                                <a href="">89859224765</a>
-                            </article>
-                            <article>
-                                <p>E-MAIL</p>
-                                <a href="">boilerup@mail.ru</a>
-                            </article>
-                            <article>
-                                <p>ОТДЕЛ ПРОДАЖ</p>
-                                <p>С 8:00 ДО 20:00</p>
-                            </article>
-                            <article>
-                                <p>АДРЕС</p>
-                                <a href=""
-                                    >Московская обл, г Долгопрудный, проезд
-                                    Промышленный, д. 14</a
-                                >
-                            </article>
-                        </div>
-                    </div>
+
+                <div class="mb-1">
                     <article>
-                        <p id="responseMessage2"></p>
-                        <form id="contactForm2">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
-                                required
-                            />
-                            <input
-                                type="tel"
-                                name="tel"
-                                placeholder="НОМЕР ТЕЛЕФОНА"
-                                required
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="ВАШ E-MAIL"
-                                required
-                            />
-                            <input type="checkbox" required />Нажимая на кнопку
-                            “Получить консультацию”, я соглашаюсь с Политикой
-                            конфиденциальности компании.
-                            <div>
-                                <button type="submit">
-                                    ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button
-                                ><img
-                                    src="./img/arrowRight.webp"
-                                    alt=""
-                                    loading="lazy"
-                                />
-                            </div>
-                        </form>
+                        <span class="text-1">Тел:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="tel:+79859224765"
+                            target="_blank"
+                            >89859224765</a
+                        >
+                    </article>
+                    <article>
+                        <span class="text-1">E-Mail:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="mailto:boilerup@mail.ru"
+                            target="_blank"
+                            >boilerup@mail.ru</a
+                        >
+                    </article>
+                    <article>
+                        <span class="text-1">Отдел продаж:</span>
+                        <span class="text-2">С 8:00 ДО 20:00</span>
+                    </article>
+                    <article>
+                        <span class="text-1">Адрес:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="https://yandex.ru/maps/214/dolgoprudniy/house/promyshlenny_proyezd_14/Z04YcwdlSEMBQFtvfXVzdXtqYA==/?ll=37.505166%2C55.924794&z=17"
+                            target="_blank"
+                            >Московская обл, г Долгопрудный, проезд
+                            Промышленный, д. 14</a
+                        >
                     </article>
                 </div>
+
+                <div class="flex-row space-around mb-1">
+                    <a href="https://t.me/budanov_dmitriy" target="_blank"
+                        ><img src="./img/tg.webp" alt="telegram" loading="lazy"
+                    /></a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=79857695559&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        ><img
+                            src="./img/watsup.webp"
+                            alt="whatsup"
+                            loading="lazy"
+                    /></a>
+                    <a href="mailto:boilerup@mail.ru" target="_blank"
+                        ><img src="./img/mail.webp" alt="email" loading="lazy"
+                    /></a>
+                </div>
                 <div>
-                    <img
-                        src="./img/map.webp"
-                        alt="Местоположение BoilerUP на карте"
-                        loading="lazy"
-                        width="100px"
-                        height="100px"
-                    />
+                    <h3 id="scrollToForm" class="h1">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                    <p class="text-1">
+                        Оставьте заявку и наш ведущий инженер свяжется с вами!
+                    </p>
+                </div>
+                <article class="form-section">
+                    <p id="responseMessage2" class="text-2"></p>
+                    <form id="contactForm2">
+                        <input
+                            class="text-1 black-text"
+                            type="text"
+                            name="name"
+                            placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                            required
+                        />
+                        <input
+                            class="text-1 black-text"
+                            type="tel"
+                            name="tel"
+                            placeholder="НОМЕР ТЕЛЕФОНА"
+                            required
+                        />
+                        <input
+                            class="text-1 black-text"
+                            type="email"
+                            name="email"
+                            placeholder="ВАШ E-MAIL"
+                            required
+                        />
+                        <div>
+                            <input
+                                type="checkbox"
+                                required
+                                name="checkbox"
+                                class="text-2"
+                            />
+                            <label for="checkbox" class="text-2 black-text"
+                                >Нажимая на кнопку “Получить консультацию”, я
+                                соглашаюсь с
+                                <a
+                                    href=""
+                                    class="no-link-style"
+                                    style="text-decoration: underline"
+                                    >Политикой конфиденциальности компании</a
+                                >.</label
+                            >
+                        </div>
+
+                        <button type="submit" class="h1">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </form>
+                </article>
+
+                <div>
+                    <a
+                        href="https://yandex.ru/maps/214/dolgoprudniy/house/promyshlenny_proyezd_14/Z04YcwdlSEMBQFtvfXVzdXtqYA==/?ll=37.505166%2C55.924794&z=17"
+                        target="_blank"
+                        ><img
+                            src="./img/map.webp"
+                            alt="Местоположение BoilerUP на карте"
+                            loading="lazy"
+                            width="100%"
+                            height="auto"
+                    /></a>
                 </div>
             </section>
         </main>
-        <footer class="light-section" style="display: none">
-            <div>
-                <p>Все права защищены © 2025</p>
-                <img
-                    src="./img/logoFoot.webp"
-                    alt="Логотип BoilerUP"
-                    loading="lazy"
-                />
-                <a href="">Политика обработки персональных данных</a>
-            </div>
+        <footer class="light-section">
+            <a href="#" class="text-2 no-link-style"
+                >Политика обработки персональных данных</a
+            >
+            <p class="text-2">Все права защищены © 2025</p>
         </footer>
     </body>
 </html>
