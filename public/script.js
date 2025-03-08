@@ -51,7 +51,7 @@ function animateScrollingElements() {
             } else {
                 element.classList.add(
                     "animate__animated",
-                    "animate__fadeIn",
+                    "animate__fadeInUp",
                     "animate__slow"
                 );
             }

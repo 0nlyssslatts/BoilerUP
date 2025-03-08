@@ -566,11 +566,19 @@ header {
     color: #fff;
 }
 
-.big > img {
+.big-img {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.map-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
 }
 /* ------- */
 /* ---- */
