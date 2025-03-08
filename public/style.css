@@ -497,4 +497,25 @@ header {
     background-color: #262b30;
 }
 /* ------- */
+/* section */
+.four-carousel {
+    height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(5, 15rem);
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+}
+
+.four-carousel-item {
+    width: 15rem;
+    height: 8rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+/* ------- */
 /* ---- */
