@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://boilerup.ru/sitemap.xml
+Host: boilerup.ru

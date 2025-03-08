@@ -2,18 +2,765 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <!-- СПРОСИТЬ У БИЗНЕСААААААААААААААААААААААААААААААА -->
+        <meta
+            name="description"
+            content="Профессиональная установка промышленных котельных под ключ. Проектируем, монтируем и обслуживаем."
+        />
+
+        <meta name="robots" content="index, follow" />
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <link rel="canonical" href="https://boilerup/" />
         <link rel="stylesheet" href="./style.css" />
-        <script src="./script.js" defer></script>
+        <script src="./script.js" type="module" defer></script>
         <title>BoilerUP</title>
     </head>
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="dark-section flex-row space-between">
+            <div><img src="./img/logoHead.webp" alt="Логотип BoilerUP" /></div>
+            <div class="desktop-nav">
+                <nav>
+                    <ul class="no-list-style flex-row gap-1">
+                        <li>КОТЕЛЬНЫЕ В АРЕНДУ</li>
+                        <li>УСЛУГИ</li>
+                        <li>О КОМПАНИИ</li>
+                        <li>ПРЕИМУЩЕСТВА</li>
+                        <li>КОНТАКТЫ</li>
+                    </ul>
+                </nav>
+                <div class="flex-row space-between">
+                    <img
+                        src="./img/tg.webp"
+                        alt="telegram"
+                        width="41"
+                        height="41"
+                    />
+                    <img
+                        src="./img/watsup.webp"
+                        alt="whatsup"
+                        width="41"
+                        height="41"
+                    />
+                    <img
+                        src="./img/mail.webp"
+                        alt="email"
+                        width="41"
+                        height="41"
+                    />
+                    <div><a href="tel:+79859224765">+7 985 922 47 65</a></div>
+                    <button>ОСТАВИТЬ ЗАЯВКУ</button>
+                </div>
+            </div>
+            <div id="mobile-nav" class="mobile-nav">
+                <div class="flex-column gap-1 mobile-nav-wrapper">
+                    <a href="#scrollToForm"
+                        ><button class="h1">ОСТАВИТЬ ЗАЯВКУ</button></a
+                    >
+
+                    <div class="flex-row space-around socials">
+                        <img
+                            src="./img/tg.webp"
+                            alt="telegram"
+                            width="41"
+                            height="41"
+                        />
+                        <img
+                            src="./img/watsup.webp"
+                            alt="whatsup"
+                            width="41"
+                            height="41"
+                        />
+                        <img
+                            src="./img/mail.webp"
+                            alt="email"
+                            width="41"
+                            height="41"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="menu-toggle" class="menu-icon">
+                <div class="menu-icon-line"></div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="dark-section grid-2row">
+                <div class="blick"></div>
+                <div class="grid-2column">
+                    <h1 class="h1 element-to-animate-left">
+                        АРЕНДА И ПРОДАЖА БЛОЧНО-МОДУЛЬНЫХ КОТЕЛЬНЫХ
+                    </h1>
+                    <div class="img-wrapper">
+                        <img
+                            src="./img/containerRed.webp"
+                            alt="Красный контейнер"
+                            width="250px"
+                            height="auto"
+                            class="red-container element-to-animate-right"
+                        />
+                    </div>
+                </div>
+
+                <div class="frst-carousel">
+                    <article class="frst-carousel-item red-item">
+                        <a
+                            class="red-item-link no-link-style"
+                            href="#scrollToForm"
+                        >
+                            <img
+                                src="./img/arrowTopRight.webp"
+                                alt="Стрелка"
+                                width="24px"
+                                height="24px"
+                            />
+                            <h2 class="h1">ПОДОБРАТЬ КОТЕЛЬНУЮ</h2>
+                        </a>
+                    </article>
+                    <article class="frst-carousel-item blur-item">
+                        <h2 class="h1">Фиксированная цена на топливо</h2>
+                        <p class="text-1">
+                            забудьте о колебаниях цен в течение всего сезона
+                        </p>
+                    </article>
+                    <article class="frst-carousel-item">
+                        <h2 class="h1">20% скидка</h2>
+                        <p class="text-1">на аренду модульных котельных</p>
+                    </article>
+                    <article class="frst-carousel-item">
+                        <h2 class="h1">
+                            Бесплатная доставка готовой котельной
+                        </h2>
+                    </article>
+                </div>
+            </section>
+            <section class="dark-section">
+                <h2 class="h1">
+                    АРЕНДА ДИЗЕЛЬНЫХ КОТЕЛЬНЫХ
+                    <br /><span class="h2 dark-text">МОСКВЕ И МО</span>
+                </h2>
+                <p class="text-1">
+                    Компания BoilerUp предлагает удобное и эффективное решение
+                    для теплоснабжения на различных объектах с помощью блочно -
+                    модульных котельных (БМК), которые становятся все более
+                    популярными благодаря своим многочисленным преимуществам.
+                </p>
+                <div class="img-wrapper">
+                    <img
+                        src="./img/containerBlack.png"
+                        alt="Черный контейнер"
+                        loading="lazy"
+                        width="100px"
+                        height="100px"
+                        class="container-black element-to-animate-right"
+                    />
+                </div>
+
+                <div class="scnd-carousel">
+                    <article class="scnd-carousel-item blur-item">
+                        <h3 class="h1">
+                            Бесплатный выезд специалиста на осмотр объекта
+                        </h3>
+                    </article>
+                    <article class="scnd-carousel-item blur-item">
+                        <h3 class="h1">
+                            Круглосуточная поставка дизельного топлива
+                        </h3>
+                    </article>
+                    <article class="scnd-carousel-item blur-item">
+                        <h3 class="h1">Доставка и запуск в течение 24 часов</h3>
+                    </article>
+                </div>
+                <p class="text-2">
+                    Мы предоставляем в аренду модульные котельные на дизельном
+                    топливе с мощностью от 1250 до 2000 кВт, обеспечивая
+                    доставку по Москве и Московской области.
+                </p>
+                <p class="text-2">
+                    BoilerUp предлагает полный спектр услуг по организации
+                    систем отопления и горячего водоснабжения любой сложности.
+                </p>
+                <p class="text-2">
+                    В наш сервис входит доставка и монтаж модульной дизельной
+                    котельной, пуско-наладка, круглосуточная поддержка,
+                    сервисное обслуживание и поставка топлива.
+                </p>
+                <button class="get-discount element-to-animate">
+                    <a class="h1 no-link-style" href="#scrollToForm"
+                        >ПОЛУЧИТЬ СКИДКУ</a
+                    >
+                </button>
+            </section>
+            <section class="light-section">
+                <h2 class="h1">
+                    Все котельные оборудованы современной автоматикой
+                    безопасности
+                </h2>
+
+                <div class="bmk-card-wrapper">
+                    <article class="bmk-card">
+                        <img
+                            src="./img/container1250.webp"
+                            alt="Блочно-модульная котельная БМК—1250"
+                            width="200px"
+                            loading="lazy"
+                        />
+                        <div class="bmk-card-content">
+                            <h3 class="h1">БМК—1250</h3>
+                            <h4 class="text-1">Блочно-модульная котельная</h4>
+                            <ul
+                                class="bmk-card-list bmk-card-list-active animate__animated animate__fadeIn text-2"
+                                data-id="1"
+                            >
+                                <li>
+                                    Котел Wiesberg, номинальной
+                                    теплопроизводительностью 1000-1250 кВт
+                                </li>
+                                <li>
+                                    Сетевой насос Wilo IL 65/160 мощностью 7,5
+                                    кВт - 2шт
+                                </li>
+                                <li>Насос рециркуляции Wilo, 944 Вт</li>
+                                <li>
+                                    Дизельная горелка Baltur TBL-160, 2,46 кВт
+                                </li>
+                                <li>Смесительный узел ESBE</li>
+                            </ul>
+                        </div>
+                        <button id="list-button" class="h1" data-id="1">
+                            СКРЫТЬ
+                        </button>
+                    </article>
+                    <article class="bmk-card">
+                        <img
+                            src="./img/container1500.webp"
+                            alt="Блочно-модульная котельная БМК—1500"
+                            loading="lazy"
+                            width="200px"
+                        />
+                        <div class="bmk-card-content">
+                            <h3 class="h1">БМК—1500</h3>
+                            <h4 class="text-1">Блочно-модульная котельная</h4>
+                            <ul class="bmk-card-list text-2" data-id="2">
+                                <li>
+                                    Котел Unical, номинальной
+                                    теплопроизводительностью 1570-1850 кВт
+                                </li>
+                                <li>
+                                    Сетевой насос Wilo IL 65/140 мощностью 7,5
+                                    кВт - 2шт
+                                </li>
+                                <li>Насос рециркуляции Wilo, 944 Вт</li>
+                                <li>
+                                    Дизельная горелка Baltur TBL-210, 3,46 кВт
+                                </li>
+                                <li>Смесительный узел ESBE</li>
+                            </ul>
+                        </div>
+                        <button id="list-button" class="h1" data-id="2">
+                            ПОДРОБНЕЕ
+                        </button>
+                    </article>
+                    <article class="bmk-card">
+                        <img
+                            src="./img/container2000.webp"
+                            alt="Блочно-модульная котельная БМК—2000"
+                            loading="lazy"
+                            width="200px"
+                        />
+                        <div class="bmk-card-content">
+                            <h3 class="h1">БМК—2000</h3>
+                            <h4 class="text-1">Блочно-модульная котельная</h4>
+
+                            <ul class="bmk-card-list text-2" data-id="3">
+                                <li>
+                                    Котел Wiesberg, номинальной
+                                    теплопроизводительностью 1700-2050 кВт
+                                </li>
+                                <li>
+                                    Сетевой насос Wilo IL 65/167 мощностью 11
+                                    кВт - 2шт
+                                </li>
+                                <li>Насос рециркуляции Wilo, 944 Вт</li>
+                                <li>
+                                    Дизельная горелка Baltur TBL-260, 6,14 кВт
+                                </li>
+                                <li>Смесительный узел ESBE</li>
+                            </ul>
+                        </div>
+                        <button id="list-button" class="h1" data-id="3">
+                            ПОДРОБНЕЕ
+                        </button>
+                    </article>
+                </div>
+            </section>
+            <section class="dark-section">
+                <div class="mb-1">
+                    <h2 class="h1 mb-1">
+                        Необходим подбор котельной на дизельном топливе?
+                    </h2>
+                    <p class="text-1">
+                        Оставьте заявку и мы перезвоним вам, чтобы
+                        проконсультировать по особенностям дизельных котельных и
+                        помочь подобрать подходящий вариант.
+                    </p>
+                </div>
+                <article class="form-section">
+                    <p id="responseMessage1" class="text-2"></p>
+                    <form id="contactForm1">
+                        <input
+                            class="text-1"
+                            type="text"
+                            name="name"
+                            placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                            required
+                        />
+                        <input
+                            class="text-1"
+                            type="tel"
+                            name="tel"
+                            placeholder="НОМЕР ТЕЛЕФОНА"
+                            required
+                        />
+                        <input
+                            class="text-1"
+                            type="email"
+                            name="email"
+                            placeholder="ВАШ E-MAIL"
+                            required
+                        />
+                        <div>
+                            <input
+                                type="checkbox"
+                                required
+                                name="checkbox"
+                                class="text-2"
+                            />
+                            <label for="checkbox" class="text-2 dark-text"
+                                >Нажимая на кнопку “Получить консультацию”, я
+                                соглашаюсь с
+                                <a
+                                    href=""
+                                    class="no-link-style"
+                                    style="text-decoration: underline"
+                                    >Политикой конфиденциальности компании</a
+                                >.</label
+                            >
+                        </div>
+
+                        <button type="submit" class="h1">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </form>
+                </article>
+            </section>
+            <section class="dark-section">
+                <div class="blick2"></div>
+                <h2 class="h1">
+                    УСЛУГИ BOILER<span class="red-text">UP</span>
+                </h2>
+                <div class="service-wrapper flex-column gap-1">
+                    <article
+                        data-num="1"
+                        id="service"
+                        class="flex-column space-around"
+                    >
+                        <div class="flex-row space-between">
+                            <h3 class="h2">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</h3>
+                            <div
+                                id="sign"
+                                class="sign-wrapper sign-wrapper-active"
+                            >
+                                <img
+                                    class="rotate"
+                                    src="./img/plus.webp"
+                                    alt="Значок плюс"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        <p
+                            id="service-text"
+                            class="text-1 service-text service-text-active animate__animated animate__fadeIn"
+                        >
+                            Мы предоставляем широкий спектр услуг по
+                            обслуживанию котельного оборудования. Наши
+                            квалифицированные специалисты выполняют плановое
+                            техническое обслуживание, включая очистку,
+                            диагностику и настройку ключевых узлов и систем. Мы
+                            также оперативно выявляем и устраняем возможные
+                            неисправности, чтобы предотвратить серьезные поломки
+                            и гарантировать стабильную и безопасную работу вашей
+                            отопительной системы.
+                        </p>
+                    </article>
+
+                    <article
+                        data-num="2"
+                        id="service"
+                        class="flex-column space-around"
+                    >
+                        <div class="flex-row space-between">
+                            <h3 class="h2">ТОПЛИВО ДЛЯ КОТЕЛЬНОЙ</h3>
+                            <div id="sign" class="sign-wrapper">
+                                <img
+                                    src="./img/plus.webp"
+                                    alt="Значок плюс"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        <p id="service-text" class="text-1 service-text">
+                            Мы рады предложить вам топливо для блочно модульных
+                            котельных с фиксированной ценой на весь отопительный
+                            сезон. Это решение позволяет вам избежать
+                            неожиданных расходов и планировать бюджет на
+                            отопление с уверенностью. Наш надежный партнер,
+                            компания Димарт, имеет более 16 лет опыта в
+                            поставках нефтегазовых продуктов. За это время они
+                            зарекомендовали себя как ведущий игрок на рынке,
+                            обеспечивая клиентов высококачественным топливом и
+                            отличным сервисом. Благодаря этому сотрудничеству мы
+                            можем гарантировать не только стабильные поставки,
+                            но и высокую степень надежности и безопасности.
+                        </p>
+                    </article>
+                    <article
+                        data-num="3"
+                        id="service"
+                        class="flex-column space-around"
+                    >
+                        <div class="flex-row space-between">
+                            <h3 class="h2">ПУСКО-НАЛАДОЧНЫЕ РАБОТЫ</h3>
+                            <div id="sign" class="sign-wrapper">
+                                <img
+                                    src="./img/plus.webp"
+                                    alt="Значок плюс"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        <p id="service-text" class="text-1 service-text">
+                            Наши квалифицированные специалисты выполняют
+                            профессиональные пуско-наладочные работы для
+                            котельного оборудования. Мы детально настраиваем и
+                            тестируем все рабочие параметры, чтобы обеспечить
+                            максимальную эффективность и надежность системы. В
+                            рамках пуско-наладочных мероприятий мы также обучаем
+                            персонал Заказчика правилам эксплуатации и
+                            эффективному использованию оборудования, чтобы
+                            гарантировать его безопасную и стабильную работу.
+                        </p>
+                    </article>
+                    <article
+                        data-num="4"
+                        id="service"
+                        class="flex-column space-around"
+                    >
+                        <div class="flex-row space-between">
+                            <h3 class="h2">ДОСТАВКА МОДУЛЬНЫХ КОТЕЛЬНЫХ</h3>
+                            <div id="sign" class="sign-wrapper">
+                                <img
+                                    src="./img/plus.webp"
+                                    alt="Значок плюс"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        <p id="service-text" class="text-1 service-text">
+                            Мы осуществляем
+                            <b
+                                >бесплатную доставку блочно-модульных
+                                котельных</b
+                            >
+                            в пределах Москвы и Московской области, используя
+                            собственные транспортные средства. Это позволяет нам
+                            гарантировать быструю и безопасную транспортировку
+                            оборудования непосредственно к вашему объекту, без
+                            дополнительных затрат для вас. Наша команда
+                            профессионалов обеспечивает не только доставку, но и
+                            полное сопровождение процесса, начиная с момента
+                            заказа и заканчивая установкой котельной. Мы
+                            понимаем, насколько важно для вас получить
+                            оборудование в кратчайшие сроки, поэтому организуем
+                            доставку с учетом всех ваших требований и сроков.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="dark-section">
+                <div class="blick2"></div>
+
+                <h2 class="h1">О КОМПАНИИ</h2>
+                <p class="text-1">
+                    Мы являемся дочерней компанией ДИМАРТ, которая более 16 лет
+                    успешно работает на рынке, зарекомендовав себя как надежный
+                    партнер в сфере продажи и поставки нефтепродуктов. <br />
+                    Наша репутация основана на высоком уровне обслуживания и
+                    качестве предлагаемых услуг.
+                </p>
+
+                <p id="about-text" class="text-2 about">
+                    Компания BoilerUp уже более 5 лет предоставляет решения в
+                    области отопительного оборудования и занимает лидирующие
+                    позиции по аренде дизельных котельных в центральном регионе
+                    России. <br />
+                    Мы предлагаем широкий спектр услуг, включая аренду дизельных
+                    блочно- модульных котельных, проектирование и строительство
+                    котельных, а также поставку котельного топлива. Наша
+                    компания активно сотрудничает с ведущими российскими
+                    производителями котлов, что позволяет нам гарантировать
+                    высокое качество продукции, проверенное временем, а также
+                    надежность и безопасность наших решений.
+                </p>
+                <button id="about-button" class="h1 element-to-animate">
+                    ПОДРОБНЕЕ
+                </button>
+            </section>
+            <section class="dark-section">
+                <h2 class="h1">НАШИ ПРЕИМУЩЕСТВА</h2>
+                <div class="thrd-carousel">
+                    <article class="thrd-carousel-item">
+                        <h3 class="h1">
+                            <span class="red-text">КРУГЛОСУТОЧНАЯ</span>
+                            ДИСПЕТЧЕРСКАЯ СЛУЖБА
+                        </h3>
+                        <p class="text-2">
+                            Собственная служба диспетчеров работает
+                            круглосуточно, чтобы обеспечить тепло там, где оно
+                            необходимо.
+                        </p>
+                    </article>
+                    <article class="thrd-carousel-item">
+                        <h3 class="h1">
+                            <span class="red-text">ОПЕРАТИВНАЯ</span> ДОСТАВКА
+                        </h3>
+                        <p class="text-2">
+                            Располагаем собственным автопарком, чтобы готовая.
+                            котельная была доставлена на Ваш объект в любое
+                            время.
+                        </p>
+                    </article>
+                    <article class="thrd-carousel-item">
+                        <h3 class="h1">
+                            <span class="red-text">ТОЛЬКО КАЧЕСТВЕННЫЕ</span>
+                            КОМПЛЕКТУЮЩИЕ
+                        </h3>
+                        <p class="text-2">
+                            Мы не экономим на качестве, поэтому наши котельные
+                            работают бесперебойно круглые сутки.
+                        </p>
+                    </article>
+                    <article class="thrd-carousel-item">
+                        <h3 class="h1">
+                            <span class="red-text">БЛОЧНО-МОДУЛЬНЫЕ</span>
+                            КОТЕЛЬНЫЕ РАЗЛИЧНЫХ МОЩНОСТЕЙ
+                        </h3>
+                        <p class="text-2">
+                            Мы доставим котельную мощностью 1250 КВт или 2000
+                            КВт на ваш объект уже завтра (г. Москва и Московская
+                            обл.)
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section class="light-section">
+                <h2 class="h1">НАШИ ПАРТНЕРЫ</h2>
+                <p class="h2">
+                    МЫ РАБОТАЕМ НА РЫНКЕ АРЕНДЫ ДИЗЕЛЬНЫХ КОТЕЛЬНЫХ
+                    <span class="red-text">БОЛЕЕ 5 ЛЕТ</span>, ПОЭТОМУ НАМ
+                    ДОВЕРЯЮТ КРУПНЫЕ И ИЗВЕСТНЫЕ КОМПАНИИ. BOILER<span
+                        class="red-text"
+                        >UP</span
+                    >
+                    - ОБЕСПЕЧИВАЕТ ВАШЕ ТЕПЛО.
+                </p>
+
+                <div class="four-carousel">
+                    <article class="four-carousel-item">
+                        <img
+                            src="./img/dimartDark.webp"
+                            alt="Комапния Dimart"
+                            loading="lazy"
+                            width="150px"
+                            height="auto"
+                        />
+                    </article>
+                    <article class="four-carousel-item">
+                        <img
+                            src="./img/pik.webp"
+                            alt="Комапния ПИК"
+                            loading="lazy"
+                        />
+                    </article>
+                    <article class="four-carousel-item">
+                        <img
+                            src="./img/lvlgr.webp"
+                            alt="Комапния Level group"
+                            loading="lazy"
+                        />
+                    </article>
+                    <article class="four-carousel-item">
+                        <img
+                            src="./img/samolet.webp"
+                            alt="Комапния САМОЛЕТ"
+                            loading="lazy"
+                        />
+                    </article>
+                    <article class="four-carousel-item">
+                        <img
+                            src="./img/absolut.webp"
+                            alt="Комапния Абсолют"
+                            loading="lazy"
+                        />
+                    </article>
+                </div>
+            </section>
+            <section class="light-section">
+                <div class="big">
+                    <h2 class="h1">КОНТАКТЫ</h2>
+                    <img
+                        class="big-img"
+                        src="./img/containerGray.webp"
+                        alt="Серый контейнер"
+                        loading="lazy"
+                        width="300px"
+                        height="auto"
+                    />
+                </div>
+
+                <div class="mb-1">
+                    <article>
+                        <span class="text-1">Тел:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="tel:+79859224765"
+                            target="_blank"
+                            >89859224765</a
+                        >
+                    </article>
+                    <article>
+                        <span class="text-1">E-Mail:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="mailto:boilerup@mail.ru"
+                            target="_blank"
+                            >boilerup@mail.ru</a
+                        >
+                    </article>
+                    <article>
+                        <span class="text-1">Отдел продаж:</span>
+                        <span class="text-2">С 8:00 ДО 20:00</span>
+                    </article>
+                    <article>
+                        <span class="text-1">Адрес:</span>
+                        <a
+                            class="text-2 no-link-style"
+                            href="https://yandex.ru/maps/214/dolgoprudniy/house/promyshlenny_proyezd_14/Z04YcwdlSEMBQFtvfXVzdXtqYA==/?ll=37.505166%2C55.924794&z=17"
+                            target="_blank"
+                            >Московская обл, г Долгопрудный, проезд
+                            Промышленный, д. 14</a
+                        >
+                    </article>
+                </div>
+
+                <div class="flex-row space-around mb-1">
+                    <a href="https://t.me/budanov_dmitriy" target="_blank"
+                        ><img src="./img/tg.webp" alt="telegram" loading="lazy"
+                    /></a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=79857695559&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        ><img
+                            src="./img/watsup.webp"
+                            alt="whatsup"
+                            loading="lazy"
+                    /></a>
+                    <a href="mailto:boilerup@mail.ru" target="_blank"
+                        ><img src="./img/mail.webp" alt="email" loading="lazy"
+                    /></a>
+                </div>
+                <div>
+                    <h3 id="scrollToForm" class="h1">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                    <p class="text-1">
+                        Оставьте заявку и наш ведущий инженер свяжется с вами!
+                    </p>
+                </div>
+                <article class="form-section">
+                    <p id="responseMessage2" class="text-2"></p>
+                    <form id="contactForm2">
+                        <input
+                            class="text-1 black-text"
+                            type="text"
+                            name="name"
+                            placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                            required
+                        />
+                        <input
+                            class="text-1 black-text"
+                            type="tel"
+                            name="tel"
+                            placeholder="НОМЕР ТЕЛЕФОНА"
+                            required
+                        />
+                        <input
+                            class="text-1 black-text"
+                            type="email"
+                            name="email"
+                            placeholder="ВАШ E-MAIL"
+                            required
+                        />
+                        <div>
+                            <input
+                                type="checkbox"
+                                required
+                                name="checkbox"
+                                class="text-2"
+                            />
+                            <label for="checkbox" class="text-2 black-text"
+                                >Нажимая на кнопку “Получить консультацию”, я
+                                соглашаюсь с
+                                <a
+                                    href=""
+                                    class="no-link-style"
+                                    style="text-decoration: underline"
+                                    >Политикой конфиденциальности компании</a
+                                >.</label
+                            >
+                        </div>
+
+                        <button type="submit" class="h1">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </form>
+                </article>
+
+                <div class="map-wrapper">
+                    <a
+                        href="https://yandex.ru/maps/214/dolgoprudniy/house/promyshlenny_proyezd_14/Z04YcwdlSEMBQFtvfXVzdXtqYA==/?ll=37.505166%2C55.924794&z=17"
+                        target="_blank"
+                        ><img
+                            src="./img/map.webp"
+                            alt="Местоположение BoilerUP на карте"
+                            loading="lazy"
+                            width="1000px"
+                            height="auto"
+                    /></a>
+                </div>
+            </section>
+        </main>
+        <footer class="light-section">
+            <a href="#" class="text-2 no-link-style"
+                >Политика обработки персональных данных</a
+            >
+            <p class="text-2">Все права защищены © 2025</p>
+        </footer>
     </body>
 </html>
