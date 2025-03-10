@@ -238,6 +238,13 @@ header {
 .desktop-nav {
     display: none;
 }
+
+.extended-nav {
+    display: none;
+}
+.desktop-nav-button {
+    max-width: 10rem;
+}
 .mobile-nav {
     visibility: hidden;
     opacity: 0;
@@ -267,7 +274,7 @@ header {
     width: 100vw;
     height: 100vh;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
 }
 .mobile-nav-active > div {
@@ -284,6 +291,11 @@ header {
     background-color: var(--light-bacground-color);
     padding: 1rem;
     border-radius: 6px;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 /* MENU BUTTON */
@@ -402,7 +414,6 @@ header {
 
 .scnd-carousel {
     height: 10rem;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 15rem);
     overflow-x: auto;
@@ -620,7 +631,11 @@ footer {
 /* MEDIA */
 
 /* Small (sm) – устройства от 576px */
-@media (min-width: 576px) {
+@media (min-width: 36rem) {
+    main {
+        max-width: 48rem;
+    }
+
     h1 {
         font-size: 2.75rem !important;
         line-height: 2.5rem !important;
@@ -639,7 +654,11 @@ footer {
 }
 
 /* Medium (md) – устройства от 768px */
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
+    main {
+        max-width: 57.5rem;
+    }
+
     h1 {
         font-size: 3.75rem !important;
         line-height: 3.5rem !important;
@@ -658,12 +677,13 @@ footer {
 
     .frst-carousel {
         height: 12rem;
-        grid-template-columns: repeat(4, 20rem);
+        grid-template-columns: repeat(4, 18rem);
     }
 
     .scnd-carousel {
         height: 12rem;
-        grid-template-columns: repeat(3, 20rem);
+        grid-template-columns: repeat(3, 18rem);
+        place-self: center;
     }
 
     .container-black {
@@ -705,19 +725,57 @@ footer {
 }
 
 /* Large (lg) – устройства от 992px */
-@media (min-width: 992px) {
-    body {
-        background-color: red;
+@media (min-width: 57.5rem) {
+    main {
+        max-width: 75rem;
+    }
+
+    .red-container-wrapper {
+        margin-bottom: 0;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+    }
+
+    .container-black {
+        width: 30%;
+        top: -4rem;
     }
 }
 
 /* Extra large (xl) – устройства от 1200px */
-@media (min-width: 1200px) {
-    /* Стили для экранов шириной ≥ 1200px */
+@media (min-width: 75rem) {
+    main {
+        max-width: 78rem;
+    }
+
+    .frst-carousel {
+        place-self: center;
+        bottom: 2rem;
+    }
+    .thrd-carousel {
+        place-self: center;
+    }
+
+    .extended-nav {
+        display: flex;
+    }
+    /* body {
+        background-color: red;
+    } */
 }
 
 /* Extra extra large (xxl) – устройства от 1400px */
-@media (min-width: 1400px) {
+@media (min-width: 87.5rem) {
     /* cтили для экранов шириной ≥ 1400px */
 }
 /* ----- */

@@ -29,14 +29,32 @@
             <div class="desktop-nav">
                 <nav>
                     <ul class="no-list-style flex-row gap-1">
-                        <li>КОТЕЛЬНЫЕ В АРЕНДУ</li>
-                        <li>УСЛУГИ</li>
-                        <li>О КОМПАНИИ</li>
-                        <li>ПРЕИМУЩЕСТВА</li>
-                        <li>КОНТАКТЫ</li>
+                        <li class="h2">
+                            <a href="#boilers" class="no-link-style"
+                                >КОТЕЛЬНЫЕ В АРЕНДУ</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#serv" class="no-link-style">УСЛУГИ</a>
+                        </li>
+                        <li class="h2">
+                            <a href="#about" class="no-link-style"
+                                >О КОМПАНИИ</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#advantages" class="no-link-style"
+                                >ПРЕИМУЩЕСТВА</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#contacts" class="no-link-style"
+                                >КОНТАКТЫ</a
+                            >
+                        </li>
                     </ul>
                 </nav>
-                <div class="flex-row space-between">
+                <div class="flex-row space-between extended-nav">
                     <img
                         src="./img/tg.webp"
                         alt="telegram"
@@ -56,8 +74,8 @@
                         height="41"
                     />
                     <div><a href="tel:+79859224765">+7 985 922 47 65</a></div>
-                    <button>ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
+                <button class="desktop-nav-button">ОСТАВИТЬ ЗАЯВКУ</button>
             </div>
             <div id="mobile-nav" class="mobile-nav">
                 <div class="flex-column gap-1 mobile-nav-wrapper">
@@ -198,7 +216,7 @@
                 </button>
             </section>
             <section class="light-section">
-                <h2 class="h1">
+                <h2 class="h1" id="boilers">
                     Все котельные оборудованы современной автоматикой
                     безопасности
                 </h2>
@@ -358,7 +376,7 @@
             </section>
             <section class="dark-section">
                 <div class="blick2"></div>
-                <h2 class="h1">
+                <h2 class="h1" id="serv">
                     УСЛУГИ BOILER<span class="red-text">UP</span>
                 </h2>
                 <div class="service-wrapper flex-column gap-1">
@@ -493,7 +511,7 @@
             <section class="dark-section">
                 <div class="blick2"></div>
 
-                <h2 class="h1">О КОМПАНИИ</h2>
+                <h2 class="h1" id="about">О КОМПАНИИ</h2>
                 <p class="text-1">
                     Мы являемся дочерней компанией ДИМАРТ, которая более 16 лет
                     успешно работает на рынке, зарекомендовав себя как надежный
@@ -520,7 +538,7 @@
                 </button>
             </section>
             <section class="dark-section">
-                <h2 class="h1">НАШИ ПРЕИМУЩЕСТВА</h2>
+                <h2 class="h1" id="advantages">НАШИ ПРЕИМУЩЕСТВА</h2>
                 <div class="thrd-carousel" id="carousel">
                     <article class="thrd-carousel-item">
                         <h3 class="h1">
@@ -620,7 +638,7 @@
             </section>
             <section class="light-section">
                 <div class="big">
-                    <h2 class="h1">КОНТАКТЫ</h2>
+                    <h2 class="h1" id="contacts">КОНТАКТЫ</h2>
                     <img
                         class="big-img"
                         src="./img/containerGray.webp"
@@ -751,7 +769,7 @@
                 </div>
             </section>
         </main>
-        <footer class="light-section">
+        <footer>
             <a href="#" class="text-2 no-link-style"
                 >Политика обработки персональных данных</a
             >
