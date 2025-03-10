@@ -17,6 +17,9 @@ const sign = document.querySelectorAll("#sign");
 //ABOUT
 const aboutText = document.getElementById("about-text");
 const aboutButton = document.getElementById("about-button");
+//CAROUSEL
+const carousels = document.querySelectorAll("#carousel");
+const carouselBmk = document.getElementById("carousel-bmk");
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -192,4 +195,28 @@ aboutButton.addEventListener("click", function (event) {
     event.target.innerText === "ПОДРОБНЕЕ"
         ? (event.target.innerText = "СКРЫТЬ")
         : (event.target.innerText = "ПОДРОБНЕЕ");
+});
+
+carousels.forEach((carousel) => {
+    carousel.addEventListener("wheel", function (e) {
+        if (e.deltaY > 0 || e.deltaX > 0) {
+            carousel.scrollLeft += 200;
+            e.preventDefault();
+        } else {
+            carousel.scrollLeft -= 200;
+            e.preventDefault();
+        }
+    });
+});
+
+carouselBmk.addEventListener("wheel", function (e) {
+    if (main.offsetWidth < 768) {
+        if (e.deltaY > 0 || e.deltaX > 0) {
+            carouselBmk.scrollLeft += 200;
+            e.preventDefault();
+        } else {
+            carouselBmk.scrollLeft -= 200;
+            e.preventDefault();
+        }
+    }
 });

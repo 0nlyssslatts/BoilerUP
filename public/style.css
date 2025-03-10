@@ -49,6 +49,10 @@ body {
     width: 100%;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .h1 {
     font-family: "Druk Cyr";
     font-size: 1.75rem;
@@ -253,7 +257,8 @@ header {
 }
 
 .socials {
-    padding-bottom: 1.5rem;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .mobile-nav-active {
@@ -349,6 +354,13 @@ header {
     gap: 1rem;
     position: absolute;
     bottom: 0rem;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.frst-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .frst-carousel-item {
@@ -396,10 +408,17 @@ header {
     overflow-x: auto;
     gap: 1rem;
     margin: 1rem 0;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
+
+.scnd-carousel::-webkit-scrollbar {
+    display: none;
+}
+
 .scnd-carousel-item {
-    width: 15rem;
-    height: 100%;
     border-radius: 12px;
     padding: 12px;
 }
@@ -420,13 +439,19 @@ header {
 /* ------- */
 /* section */
 .bmk-card-wrapper {
-    height: auto;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 16rem);
     overflow-x: auto;
     gap: 1rem;
     margin: 1rem 0;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.bmk-card-wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 .bmk-card {
@@ -506,18 +531,22 @@ header {
 /* ------- */
 /* section */
 .thrd-carousel {
-    height: 15rem;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 15rem);
     overflow-x: auto;
     gap: 1rem;
     margin: 1rem 0;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.thrd-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .thrd-carousel-item {
-    width: 15rem;
-    height: 100%;
     border-radius: 12px;
     padding: 12px;
     background-color: #262b30;
@@ -525,17 +554,21 @@ header {
 /* ------- */
 /* section */
 .four-carousel {
-    height: 8rem;
     display: grid;
     grid-template-columns: repeat(5, 15rem);
     overflow-x: auto;
     overflow-y: hidden;
     gap: 1rem;
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.four-carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .four-carousel-item {
-    width: 15rem;
-    height: 8rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -553,7 +586,7 @@ header {
     overflow: hidden;
 }
 .big > h2 {
-    font-size: 120px;
+    font-size: 7.5rem;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -589,8 +622,8 @@ footer {
 /* Small (sm) – устройства от 576px */
 @media (min-width: 576px) {
     h1 {
-        font-size: 2.75rem;
-        line-height: 2.5rem;
+        font-size: 2.75rem !important;
+        line-height: 2.5rem !important;
     }
     .red-container-wrapper {
         margin-bottom: 4rem;
@@ -599,9 +632,6 @@ footer {
     .frst-carousel {
         width: 98%;
     }
-    /* .frst-carousel-item {
-        width: 18rem !important;
-    } */
 
     .container-black {
         top: -4rem;
@@ -610,14 +640,75 @@ footer {
 
 /* Medium (md) – устройства от 768px */
 @media (min-width: 768px) {
-    body {
-        background-color: red;
+    h1 {
+        font-size: 3.75rem !important;
+        line-height: 3.5rem !important;
+    }
+
+    .blick {
+        top: -1rem;
+        left: -1rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .red-container-wrapper {
+        margin-bottom: 1rem;
+    }
+
+    .frst-carousel {
+        height: 12rem;
+        grid-template-columns: repeat(4, 20rem);
+    }
+
+    .scnd-carousel {
+        height: 12rem;
+        grid-template-columns: repeat(3, 20rem);
+    }
+
+    .container-black {
+        width: 40%;
+        top: -4rem;
+    }
+
+    .bmk-card-wrapper {
+        place-self: center;
+    }
+
+    .big {
+        height: 11rem;
+    }
+    .big > h2 {
+        font-size: 12rem;
+    }
+
+    .big-img {
+        width: 30rem;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .blick2 {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .thrd-carousel {
+        grid-template-columns: repeat(4, 18rem);
+    }
+
+    .four-carousel {
+        grid-template-columns: repeat(5, 18rem);
     }
 }
 
 /* Large (lg) – устройства от 992px */
 @media (min-width: 992px) {
-    /* стили для экранов шириной ≥ 992px */
+    body {
+        background-color: red;
+    }
 }
 
 /* Extra large (xl) – устройства от 1200px */
