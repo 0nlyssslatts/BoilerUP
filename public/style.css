@@ -100,6 +100,7 @@ li::marker {
 
 section {
     width: 100%;
+    height: fit-content;
     padding: 0.5rem;
     position: relative;
 }
@@ -129,16 +130,6 @@ section {
 }
 .space-between {
     justify-content: space-between;
-}
-
-.grid-2column {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-2row {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
 }
 
 .no-list-style {
@@ -232,11 +223,6 @@ form input {
     transform: rotate(45deg);
 }
 /* -------------- */
-
-/* MEDIA */
-@media (min-width: 31.25rem) {
-}
-/* ----- */
 
 /* HEADER */
 
@@ -338,6 +324,13 @@ header {
 
 /* MAIN */
 /* section */
+
+.red-container-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 8rem;
+}
+
 .red-container {
     width: 100%;
     height: auto;
@@ -349,16 +342,16 @@ header {
 
 .frst-carousel {
     height: 10rem;
-    width: 100%;
+    width: 96%;
+    overflow-x: auto;
     display: grid;
     grid-template-columns: repeat(4, 15rem);
-    overflow-x: auto;
     gap: 1rem;
+    position: absolute;
+    bottom: 0rem;
 }
 
 .frst-carousel-item {
-    width: 15rem;
-    height: 100%;
     border-radius: 12px;
     padding: 12px;
     background-color: #1f2529;
@@ -416,7 +409,8 @@ header {
     width: 50%;
     height: auto;
     right: 0;
-    top: 0.5rem;
+    top: 0;
+    z-index: -1;
 }
 
 .get-discount {
@@ -556,6 +550,7 @@ header {
     position: relative;
     width: 100%;
     height: 8rem;
+    overflow: hidden;
 }
 .big > h2 {
     font-size: 120px;
@@ -588,3 +583,50 @@ footer {
     padding: 1rem 0;
 }
 /* ------ */
+
+/* MEDIA */
+
+/* Small (sm) – устройства от 576px */
+@media (min-width: 576px) {
+    h1 {
+        font-size: 2.75rem;
+        line-height: 2.5rem;
+    }
+    .red-container-wrapper {
+        margin-bottom: 4rem;
+    }
+
+    .frst-carousel {
+        width: 98%;
+    }
+    /* .frst-carousel-item {
+        width: 18rem !important;
+    } */
+
+    .container-black {
+        top: -4rem;
+    }
+}
+
+/* Medium (md) – устройства от 768px */
+@media (min-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Large (lg) – устройства от 992px */
+@media (min-width: 992px) {
+    /* стили для экранов шириной ≥ 992px */
+}
+
+/* Extra large (xl) – устройства от 1200px */
+@media (min-width: 1200px) {
+    /* Стили для экранов шириной ≥ 1200px */
+}
+
+/* Extra extra large (xxl) – устройства от 1400px */
+@media (min-width: 1400px) {
+    /* cтили для экранов шириной ≥ 1400px */
+}
+/* ----- */

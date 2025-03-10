@@ -108,7 +108,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-main.addEventListener("click", function (event) {
+main.addEventListener("click", function () {
     if (navMobileState) {
         closeMenu();
     }
@@ -149,9 +149,8 @@ buttons.forEach((button) => {
 });
 
 service.forEach((element) => {
-    element.addEventListener("click", function (event) {
+    element.addEventListener("click", function () {
         let dataNum = element.getAttribute("data-num");
-        console.log();
         switch (dataNum) {
             case "1":
                 serviceText[0].classList.toggle("service-text-active");
@@ -179,7 +178,7 @@ service.forEach((element) => {
                 serviceText[3].classList.toggle("animate__animated");
                 serviceText[3].classList.toggle("animate__fadeIn");
                 sign[3].classList.toggle("sign-wrapper-active");
-                sign[4].children[0].classList.toggle("rotate");
+                sign[3].children[0].classList.toggle("rotate");
                 break;
         }
     });
