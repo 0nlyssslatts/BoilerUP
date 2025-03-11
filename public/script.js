@@ -24,12 +24,13 @@ const carouselBmk = document.getElementById("carousel-bmk");
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
+        rect.top >= -100 &&
+        rect.left >= -100 &&
         rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
+            (window.innerHeight || document.documentElement.clientHeight) +
+                100 &&
         rect.right <=
-            (window.innerWidth || document.documentElement.clientWidth)
+            (window.innerWidth || document.documentElement.clientWidth) + 100
     );
 }
 
