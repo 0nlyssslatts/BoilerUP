@@ -13,14 +13,13 @@ let transporter = nodemailer.createTransport({
 });
 
 async function mailer(name, tel, email) {
-    const info = await transporter.sendMail({
-        from: `Сайт <${process.env.MAIL_USER}>`,
-        to: `${process.env.MAIL_USER}`,
-        subject: "Новый клиент",
-        text: `Имя: ${name}\nТелефон: ${tel}\nEmail: ${email}`,
-    });
-
-    console.log("Message sent: ", info.messageId);
+    // const info = await transporter.sendMail({
+    //     from: `Сайт <${process.env.MAIL_USER}>`,
+    //     to: `${process.env.MAIL_USER}`,
+    //     subject: "Новый клиент",
+    //     text: `Имя: ${name}\nТелефон: ${tel}\nEmail: ${email}`,
+    // });
+    // console.log("Message sent: ", info.messageId);
 }
 
 module.exports = mailer;
