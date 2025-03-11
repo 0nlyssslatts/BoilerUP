@@ -246,7 +246,7 @@ header {
     display: none;
 }
 .desktop-nav-button {
-    max-width: 10rem;
+    max-width: 12rem;
 }
 .mobile-nav {
     visibility: hidden;
@@ -782,6 +782,33 @@ footer {
 
 /* Extra extra large (xxl) – устройства от 1400px */
 @media (min-width: 87.5rem) {
-    /* cтили для экранов шириной ≥ 1400px */
+    .h1 {
+        font-size: 2.25rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.75rem;
+        margin: 1rem 0;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        line-height: 1.75rem;
+    }
+
+    .text-1 {
+        font-family: "SF Pro Display";
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.25rem;
+    }
+
+    .text-2 {
+        font-family: "SF Pro Display";
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.25rem;
+    }
 }
 /* ----- */

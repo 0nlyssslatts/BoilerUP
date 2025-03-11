@@ -163,6 +163,7 @@ aboutButton.addEventListener("click", function (event) {
 carousels.forEach((carousel) => {
     carousel.addEventListener("wheel", function (e) {
         if (e.deltaY > 0 || e.deltaX > 0) {
+            // ЧЕ ДЕЛАТЬ С Y
             carousel.scrollLeft += 200;
             e.preventDefault();
         } else {
