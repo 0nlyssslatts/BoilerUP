@@ -128,23 +128,9 @@ buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
         let dataId = event.target.getAttribute("data-id");
 
-        switch (dataId) {
-            case "1":
-                bmks[0].classList.toggle("bmk-card-list-active");
-                bmks[0].classList.toggle("animate__animated");
-                bmks[0].classList.toggle("animate__fadeIn");
-                break;
-            case "2":
-                bmks[1].classList.toggle("bmk-card-list-active");
-                bmks[1].classList.toggle("animate__animated");
-                bmks[1].classList.toggle("animate__fadeIn");
-                break;
-            case "3":
-                bmks[2].classList.toggle("bmk-card-list-active");
-                bmks[2].classList.toggle("animate__animated");
-                bmks[2].classList.toggle("animate__fadeIn");
-                break;
-        }
+        bmks[dataId - 1].classList.toggle("bmk-card-list-active");
+        bmks[dataId - 1].classList.toggle("animate__animated");
+        bmks[dataId - 1].classList.toggle("animate__fadeIn");
 
         event.target.innerText === "ПОДРОБНЕЕ"
             ? (event.target.innerText = "СКРЫТЬ")
@@ -155,36 +141,12 @@ buttons.forEach((button) => {
 service.forEach((element) => {
     element.addEventListener("click", function () {
         let dataNum = element.getAttribute("data-num");
-        switch (dataNum) {
-            case "1":
-                serviceText[0].classList.toggle("service-text-active");
-                serviceText[0].classList.toggle("animate__animated");
-                serviceText[0].classList.toggle("animate__fadeIn");
-                sign[0].classList.toggle("sign-wrapper-active");
-                sign[0].children[0].classList.toggle("rotate");
-                break;
-            case "2":
-                serviceText[1].classList.toggle("service-text-active");
-                serviceText[1].classList.toggle("animate__animated");
-                serviceText[1].classList.toggle("animate__fadeIn");
-                sign[1].classList.toggle("sign-wrapper-active");
-                sign[1].children[0].classList.toggle("rotate");
-                break;
-            case "3":
-                serviceText[2].classList.toggle("service-text-active");
-                serviceText[2].classList.toggle("animate__animated");
-                serviceText[2].classList.toggle("animate__fadeIn");
-                sign[2].classList.toggle("sign-wrapper-active");
-                sign[2].children[0].classList.toggle("rotate");
-                break;
-            case "4":
-                serviceText[3].classList.toggle("service-text-active");
-                serviceText[3].classList.toggle("animate__animated");
-                serviceText[3].classList.toggle("animate__fadeIn");
-                sign[3].classList.toggle("sign-wrapper-active");
-                sign[3].children[0].classList.toggle("rotate");
-                break;
-        }
+
+        serviceText[dataNum - 1].classList.toggle("service-text-active");
+        serviceText[dataNum - 1].classList.toggle("animate__animated");
+        serviceText[dataNum - 1].classList.toggle("animate__fadeIn");
+        sign[dataNum - 1].classList.toggle("sign-wrapper-active");
+        sign[dataNum - 1].children[0].classList.toggle("rotate");
     });
 });
 
