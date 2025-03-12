@@ -230,6 +230,14 @@ form input {
     border: 1px solid rgba(155, 163, 185, 0.2);
     color: var(--light-text-color);
 }
+.text-2 input[type="checkbox"] {
+    appearance: none; /* Отключение стандартных стилей */
+    width: 16px; /* Установка ширины чекбокса */
+    height: 16px; /* Установка высоты чекбокса */
+    border-radius: 2px; /* Опционально, для скругления углов */
+    background-color: white; /* Цвет фона */
+    border: 1px solid gray; /* Рамка вокруг чекбокса */
+}
 
 .rotate {
     transform: rotate(45deg);
@@ -306,6 +314,10 @@ header {
 main {
     max-width: 100%;
     margin: 0 auto;
+}
+
+.mobile-menu {
+    gap: 1rem;
 }
 
 /* MENU BUTTON */
@@ -756,7 +768,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .menu-icon {
+    .mobile-menu {
         display: none;
     }
 
