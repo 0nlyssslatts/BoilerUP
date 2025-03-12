@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "pm2 start server.js --name boilerup",
+        "restart": "pm2 restart boilerup"
     },
     "keywords": [],
     "author": "",
