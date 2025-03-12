@@ -274,7 +274,7 @@ header {
 
 .socials {
     justify-content: center;
-    gap: 1rem;
+    gap: 6rem;
 }
 
 .mobile-nav-active {
@@ -619,6 +619,13 @@ main {
     transform: translate(-50%, -50%);
 }
 
+.contacts-section {
+    max-width: 45rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
 .map-wrapper {
     overflow: hidden;
     display: flex;
@@ -670,6 +677,10 @@ footer {
     h1 {
         font-size: 3.75rem !important;
         line-height: 3.5rem !important;
+    }
+
+    .socials {
+        gap: 12rem;
     }
 
     .blick {
