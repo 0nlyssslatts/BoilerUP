@@ -1,25 +1,17 @@
-// FORMS
 const form1 = document.getElementById("contactForm1");
 const form2 = document.getElementById("contactForm2");
-// MOBILE MENU
 const menuToggle = document.getElementById("menu-toggle");
 const navMobile = document.getElementById("mobile-nav");
 let navMobileState = false;
-//MAIN
 const main = document.getElementById("main");
-//BMK
 const buttons = document.querySelectorAll("#list-button");
 const bmks = document.querySelectorAll(".bmk-card-list");
-//SERVICE
 const service = document.querySelectorAll("#service");
 const serviceText = document.querySelectorAll("#service-text");
 const sign = document.querySelectorAll("#sign");
-//ABOUT
 const aboutText = document.getElementById("about-text");
 const aboutButton = document.getElementById("about-button");
-//CAROUSEL
 const carousels = document.querySelectorAll("#carousel");
-
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -32,7 +24,6 @@ function isElementInViewport(el) {
             (window.innerWidth || document.documentElement.clientWidth) + 100
     );
 }
-
 function animateScrollingElements() {
     const elements = document.querySelectorAll(
         ".element-to-animate-left, .element-to-animate-right, .element-to-animate"
@@ -61,10 +52,8 @@ function animateScrollingElements() {
         }
     });
 }
-
 document.addEventListener("DOMContentLoaded", animateScrollingElements);
 window.addEventListener("scroll", animateScrollingElements);
-
 function formHandle(num) {
     return function (event) {
         event.preventDefault();
@@ -92,37 +81,31 @@ function formHandle(num) {
 }
 form1.addEventListener("submit", formHandle(1));
 form2.addEventListener("submit", formHandle(2));
-
 menuToggle.onclick = function () {
     navMobileState = true;
     menuToggle.classList.add("menu-icon-active");
     navMobile.classList.add("mobile-nav-active");
 };
-
 window.addEventListener("resize", function () {
     if (navMobileState && window.innerWidth >= 840) {
         closeMenu();
     }
 });
-
 window.addEventListener("scroll", () => {
     if (navMobileState) {
         closeMenu();
     }
 });
-
 main.addEventListener("click", function () {
     if (navMobileState) {
         closeMenu();
     }
 });
-
 function closeMenu() {
     navMobileState = false;
     menuToggle.classList.remove("menu-icon-active");
     navMobile.classList.remove("mobile-nav-active");
 }
-
 buttons.forEach((button) => {
     button.addEventListener("click", function (event) {
         let dataId = event.target.getAttribute("data-id");
@@ -136,7 +119,6 @@ buttons.forEach((button) => {
             : (event.target.innerText = "ПОДРОБНЕЕ");
     });
 });
-
 service.forEach((element) => {
     element.addEventListener("click", function () {
         let dataNum = element.getAttribute("data-num");
@@ -148,7 +130,6 @@ service.forEach((element) => {
         sign[dataNum - 1].children[0].classList.toggle("rotate");
     });
 });
-
 aboutButton.addEventListener("click", function (event) {
     aboutText.classList.toggle("about-active");
     aboutText.classList.toggle("animate__animated");
@@ -158,7 +139,6 @@ aboutButton.addEventListener("click", function (event) {
         ? (event.target.innerText = "СКРЫТЬ")
         : (event.target.innerText = "ПОДРОБНЕЕ");
 });
-
 function scrollHandler(event, carousel) {
     if (event.deltaY > 0 || event.deltaX > 0) {
         carousel.scrollLeft += 200;
@@ -168,7 +148,6 @@ function scrollHandler(event, carousel) {
         event.preventDefault();
     }
 }
-
 carousels.forEach((carousel) => {
     carousel.addEventListener("wheel", function (e) {
         if (
@@ -187,16 +166,4 @@ carousels.forEach((carousel) => {
             scrollHandler(e, carousel);
         }
     });
-});
-
-carouselBmk.addEventListener("wheel", function (e) {
-    if (main.offsetWidth < 768) {
-        if (e.deltaY > 0 || e.deltaX > 0) {
-            carouselBmk.scrollLeft += 200;
-            e.preventDefault();
-        } else {
-            carouselBmk.scrollLeft -= 200;
-            e.preventDefault();
-        }
-    }
 });

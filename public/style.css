@@ -344,14 +344,10 @@ main {
     height: 4px;
     background-color: var(--red-color);
 }
-
 /* ----------- */
-
 /* ------ */
-
 /* MAIN */
 /* section */
-
 .red-container-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
