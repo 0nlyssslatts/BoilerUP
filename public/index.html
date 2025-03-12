@@ -6,7 +6,6 @@
             name="viewport"
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
         />
-        <!-- СПРОСИТЬ У БИЗНЕСААААААААААААААААААААААААААААААА -->
         <meta
             name="description"
             content="Профессиональная установка промышленных котельных под ключ. Проектируем, монтируем и обслуживаем."
@@ -29,35 +28,69 @@
             <div class="desktop-nav">
                 <nav>
                     <ul class="no-list-style flex-row gap-1">
-                        <li>КОТЕЛЬНЫЕ В АРЕНДУ</li>
-                        <li>УСЛУГИ</li>
-                        <li>О КОМПАНИИ</li>
-                        <li>ПРЕИМУЩЕСТВА</li>
-                        <li>КОНТАКТЫ</li>
+                        <li class="h2">
+                            <a href="#boilers" class="no-link-style"
+                                >КОТЕЛЬНЫЕ В АРЕНДУ</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#serv" class="no-link-style">УСЛУГИ</a>
+                        </li>
+                        <li class="h2">
+                            <a href="#about" class="no-link-style"
+                                >О КОМПАНИИ</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#advantages" class="no-link-style"
+                                >ПРЕИМУЩЕСТВА</a
+                            >
+                        </li>
+                        <li class="h2">
+                            <a href="#contacts" class="no-link-style"
+                                >КОНТАКТЫ</a
+                            >
+                        </li>
                     </ul>
                 </nav>
-                <div class="flex-row space-between">
-                    <img
-                        src="./img/tg.webp"
-                        alt="telegram"
-                        width="41"
-                        height="41"
-                    />
-                    <img
-                        src="./img/watsup.webp"
-                        alt="whatsup"
-                        width="41"
-                        height="41"
-                    />
-                    <img
-                        src="./img/mail.webp"
-                        alt="email"
-                        width="41"
-                        height="41"
-                    />
-                    <div><a href="tel:+79859224765">+7 985 922 47 65</a></div>
-                    <button>ОСТАВИТЬ ЗАЯВКУ</button>
+                <div class="flex-row space-between extended-nav">
+                    <a href="https://t.me/budanov_dmitriy" target="_blank"
+                        ><img
+                            src="./img/tg.svg"
+                            alt="telegram"
+                            loading="lazy"
+                            width="44"
+                            height="44"
+                    /></a>
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=79857695559&text&type=phone_number&app_absent=0"
+                        target="_blank"
+                        ><img
+                            src="./img/watsup.svg"
+                            alt="whatsup"
+                            loading="lazy"
+                            width="44"
+                            height="44"
+                    /></a>
+                    <a href="mailto:boilerup@mail.ru" target="_blank"
+                        ><img
+                            src="./img/mail.svg"
+                            alt="email"
+                            loading="lazy"
+                            width="44"
+                            height="44"
+                    /></a>
+                    <div>
+                        <a class="no-link-style h2" href="tel:+79859224765"
+                            >+7 985 922 47 65</a
+                        >
+                    </div>
                 </div>
+                <a href="#scrollToForm"
+                    ><button class="desktop-nav-button h2">
+                        ОСТАВИТЬ ЗАЯВКУ
+                    </button></a
+                >
             </div>
             <div id="mobile-nav" class="mobile-nav">
                 <div class="flex-column gap-1 mobile-nav-wrapper">
@@ -65,25 +98,27 @@
                         ><button class="h1">ОСТАВИТЬ ЗАЯВКУ</button></a
                     >
 
-                    <div class="flex-row space-around socials">
-                        <img
-                            src="./img/tg.webp"
-                            alt="telegram"
-                            width="41"
-                            height="41"
-                        />
-                        <img
-                            src="./img/watsup.webp"
-                            alt="whatsup"
-                            width="41"
-                            height="41"
-                        />
-                        <img
-                            src="./img/mail.webp"
-                            alt="email"
-                            width="41"
-                            height="41"
-                        />
+                    <div class="flex-row socials">
+                        <a href="https://t.me/budanov_dmitriy" target="_blank"
+                            ><img
+                                src="./img/tg.svg"
+                                alt="telegram"
+                                loading="lazy"
+                        /></a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=79857695559&text&type=phone_number&app_absent=0"
+                            target="_blank"
+                            ><img
+                                src="./img/watsup.svg"
+                                alt="whatsup"
+                                loading="lazy"
+                        /></a>
+                        <a href="mailto:boilerup@mail.ru" target="_blank"
+                            ><img
+                                src="./img/mail.svg"
+                                alt="email"
+                                loading="lazy"
+                        /></a>
                     </div>
                 </div>
             </div>
@@ -92,11 +127,11 @@
             </div>
         </header>
         <main id="main">
-            <section class="dark-section grid-2row">
+            <section class="dark-section">
                 <div class="blick"></div>
-                <div class="grid-2column">
+                <div class="red-container-wrapper">
                     <h1 class="h1 element-to-animate-left">
-                        АРЕНДА И ПРОДАЖА БЛОЧНО-МОДУЛЬНЫХ КОТЕЛЬНЫХ
+                        АРЕНДА И ПРОДАЖА<br />БЛОЧНО-МОДУЛЬНЫХ КОТЕЛЬНЫХ
                     </h1>
                     <div class="img-wrapper">
                         <img
@@ -107,38 +142,37 @@
                             class="red-container element-to-animate-right"
                         />
                     </div>
-                </div>
-
-                <div class="frst-carousel">
-                    <article class="frst-carousel-item red-item">
-                        <a
-                            class="red-item-link no-link-style"
-                            href="#scrollToForm"
-                        >
-                            <img
-                                src="./img/arrowTopRight.webp"
-                                alt="Стрелка"
-                                width="24px"
-                                height="24px"
-                            />
-                            <h2 class="h1">ПОДОБРАТЬ КОТЕЛЬНУЮ</h2>
-                        </a>
-                    </article>
-                    <article class="frst-carousel-item blur-item">
-                        <h2 class="h1">Фиксированная цена на топливо</h2>
-                        <p class="text-1">
-                            забудьте о колебаниях цен в течение всего сезона
-                        </p>
-                    </article>
-                    <article class="frst-carousel-item">
-                        <h2 class="h1">20% скидка</h2>
-                        <p class="text-1">на аренду модульных котельных</p>
-                    </article>
-                    <article class="frst-carousel-item">
-                        <h2 class="h1">
-                            Бесплатная доставка готовой котельной
-                        </h2>
-                    </article>
+                    <div class="frst-carousel" id="carousel">
+                        <article class="frst-carousel-item red-item">
+                            <a
+                                class="red-item-link no-link-style"
+                                href="#scrollToForm"
+                            >
+                                <img
+                                    src="./img/arrowTopRight.webp"
+                                    alt="Стрелка"
+                                    width="24px"
+                                    height="24px"
+                                />
+                                <h2 class="h1">ПОДОБРАТЬ КОТЕЛЬНУЮ</h2>
+                            </a>
+                        </article>
+                        <article class="frst-carousel-item">
+                            <h2 class="h1">Фиксированная цена на топливо</h2>
+                            <p class="text-1">
+                                забудьте о колебаниях цен в течение всего сезона
+                            </p>
+                        </article>
+                        <article class="frst-carousel-item">
+                            <h2 class="h1">20% скидка</h2>
+                            <p class="text-1">на аренду модульных котельных</p>
+                        </article>
+                        <article class="frst-carousel-item">
+                            <h2 class="h1">
+                                Бесплатная доставка готовой котельной
+                            </h2>
+                        </article>
+                    </div>
                 </div>
             </section>
             <section class="dark-section">
@@ -154,7 +188,7 @@
                 </p>
                 <div class="img-wrapper">
                     <img
-                        src="./img/containerBlack.png"
+                        src="./img/containerBlack.webp"
                         alt="Черный контейнер"
                         loading="lazy"
                         width="100px"
@@ -163,18 +197,18 @@
                     />
                 </div>
 
-                <div class="scnd-carousel">
-                    <article class="scnd-carousel-item blur-item">
+                <div class="scnd-carousel" id="carousel">
+                    <article class="scnd-carousel-item">
                         <h3 class="h1">
                             Бесплатный выезд специалиста на осмотр объекта
                         </h3>
                     </article>
-                    <article class="scnd-carousel-item blur-item">
+                    <article class="scnd-carousel-item">
                         <h3 class="h1">
                             Круглосуточная поставка дизельного топлива
                         </h3>
                     </article>
-                    <article class="scnd-carousel-item blur-item">
+                    <article class="scnd-carousel-item">
                         <h3 class="h1">Доставка и запуск в течение 24 часов</h3>
                     </article>
                 </div>
@@ -199,12 +233,11 @@
                 </button>
             </section>
             <section class="light-section">
-                <h2 class="h1">
+                <h2 class="h1" id="boilers">
                     Все котельные оборудованы современной автоматикой
                     безопасности
                 </h2>
-
-                <div class="bmk-card-wrapper">
+                <div class="bmk-card-wrapper" id="carousel">
                     <article class="bmk-card">
                         <img
                             src="./img/container1250.webp"
@@ -215,10 +248,7 @@
                         <div class="bmk-card-content">
                             <h3 class="h1">БМК—1250</h3>
                             <h4 class="text-1">Блочно-модульная котельная</h4>
-                            <ul
-                                class="bmk-card-list bmk-card-list-active animate__animated animate__fadeIn text-2"
-                                data-id="1"
-                            >
+                            <ul class="bmk-card-list text-2" data-id="1">
                                 <li>
                                     Котел Wiesberg, номинальной
                                     теплопроизводительностью 1000-1250 кВт
@@ -235,7 +265,7 @@
                             </ul>
                         </div>
                         <button id="list-button" class="h1" data-id="1">
-                            СКРЫТЬ
+                            ПОДРОБНЕЕ
                         </button>
                     </article>
                     <article class="bmk-card">
@@ -302,17 +332,17 @@
                 </div>
             </section>
             <section class="dark-section">
-                <div class="mb-1">
-                    <h2 class="h1 mb-1">
-                        Необходим подбор котельной на дизельном топливе?
-                    </h2>
-                    <p class="text-1">
-                        Оставьте заявку и мы перезвоним вам, чтобы
-                        проконсультировать по особенностям дизельных котельных и
-                        помочь подобрать подходящий вариант.
-                    </p>
-                </div>
                 <article class="form-section">
+                    <div class="mb-1">
+                        <h2 class="h1 mb-1">
+                            Необходим подбор котельной на дизельном топливе?
+                        </h2>
+                        <p class="text-1 mb-1">
+                            Оставьте заявку и мы перезвоним вам, чтобы
+                            проконсультировать по особенностям дизельных
+                            котельных и помочь подобрать подходящий вариант.
+                        </p>
+                    </div>
                     <p id="responseMessage1" class="text-2"></p>
                     <form id="contactForm1">
                         <input
@@ -363,7 +393,7 @@
             </section>
             <section class="dark-section">
                 <div class="blick2"></div>
-                <h2 class="h1">
+                <h2 class="h1" id="serv">
                     УСЛУГИ BOILER<span class="red-text">UP</span>
                 </h2>
                 <div class="service-wrapper flex-column gap-1">
@@ -498,7 +528,7 @@
             <section class="dark-section">
                 <div class="blick2"></div>
 
-                <h2 class="h1">О КОМПАНИИ</h2>
+                <h2 class="h1" id="about">О КОМПАНИИ</h2>
                 <p class="text-1">
                     Мы являемся дочерней компанией ДИМАРТ, которая более 16 лет
                     успешно работает на рынке, зарекомендовав себя как надежный
@@ -525,8 +555,8 @@
                 </button>
             </section>
             <section class="dark-section">
-                <h2 class="h1">НАШИ ПРЕИМУЩЕСТВА</h2>
-                <div class="thrd-carousel">
+                <h2 class="h1" id="advantages">НАШИ ПРЕИМУЩЕСТВА</h2>
+                <div class="thrd-carousel" id="carousel">
                     <article class="thrd-carousel-item">
                         <h3 class="h1">
                             <span class="red-text">КРУГЛОСУТОЧНАЯ</span>
@@ -573,7 +603,7 @@
             </section>
             <section class="light-section">
                 <h2 class="h1">НАШИ ПАРТНЕРЫ</h2>
-                <p class="h2">
+                <p class="h2 mb-1">
                     МЫ РАБОТАЕМ НА РЫНКЕ АРЕНДЫ ДИЗЕЛЬНЫХ КОТЕЛЬНЫХ
                     <span class="red-text">БОЛЕЕ 5 ЛЕТ</span>, ПОЭТОМУ НАМ
                     ДОВЕРЯЮТ КРУПНЫЕ И ИЗВЕСТНЫЕ КОМПАНИИ. BOILER<span
@@ -583,7 +613,7 @@
                     - ОБЕСПЕЧИВАЕТ ВАШЕ ТЕПЛО.
                 </p>
 
-                <div class="four-carousel">
+                <div class="four-carousel" id="carousel">
                     <article class="four-carousel-item">
                         <img
                             src="./img/dimartDark.webp"
@@ -598,6 +628,8 @@
                             src="./img/pik.webp"
                             alt="Комапния ПИК"
                             loading="lazy"
+                            width="126"
+                            height="auto"
                         />
                     </article>
                     <article class="four-carousel-item">
@@ -605,6 +637,8 @@
                             src="./img/lvlgr.webp"
                             alt="Комапния Level group"
                             loading="lazy"
+                            width="90"
+                            height="auto"
                         />
                     </article>
                     <article class="four-carousel-item">
@@ -612,6 +646,8 @@
                             src="./img/samolet.webp"
                             alt="Комапния САМОЛЕТ"
                             loading="lazy"
+                            width="158"
+                            height="auto"
                         />
                     </article>
                     <article class="four-carousel-item">
@@ -619,13 +655,15 @@
                             src="./img/absolut.webp"
                             alt="Комапния Абсолют"
                             loading="lazy"
+                            width="160"
+                            height="auto"
                         />
                     </article>
                 </div>
             </section>
             <section class="light-section">
                 <div class="big">
-                    <h2 class="h1">КОНТАКТЫ</h2>
+                    <h2 class="h1" id="contacts">КОНТАКТЫ</h2>
                     <img
                         class="big-img"
                         src="./img/containerGray.webp"
@@ -636,7 +674,7 @@
                     />
                 </div>
 
-                <div class="mb-1">
+                <div class="contacts-section">
                     <article>
                         <span class="text-1">Тел:</span>
                         <a
@@ -671,29 +709,31 @@
                     </article>
                 </div>
 
-                <div class="flex-row space-around mb-1">
+                <div class="flex-row socials mb-1">
                     <a href="https://t.me/budanov_dmitriy" target="_blank"
-                        ><img src="./img/tg.webp" alt="telegram" loading="lazy"
+                        ><img src="./img/tg.svg" alt="telegram" loading="lazy"
                     /></a>
                     <a
                         href="https://api.whatsapp.com/send/?phone=79857695559&text&type=phone_number&app_absent=0"
                         target="_blank"
                         ><img
-                            src="./img/watsup.webp"
+                            src="./img/watsup.svg"
                             alt="whatsup"
                             loading="lazy"
                     /></a>
                     <a href="mailto:boilerup@mail.ru" target="_blank"
-                        ><img src="./img/mail.webp" alt="email" loading="lazy"
+                        ><img src="./img/mail.svg" alt="email" loading="lazy"
                     /></a>
                 </div>
-                <div>
-                    <h3 id="scrollToForm" class="h1">ОСТАЛИСЬ ВОПРОСЫ?</h3>
-                    <p class="text-1">
-                        Оставьте заявку и наш ведущий инженер свяжется с вами!
-                    </p>
-                </div>
+
                 <article class="form-section">
+                    <div class="mb-1">
+                        <h3 id="scrollToForm" class="h1">ОСТАЛИСЬ ВОПРОСЫ?</h3>
+                        <p class="text-1">
+                            Оставьте заявку и наш ведущий инженер свяжется с
+                            вами!
+                        </p>
+                    </div>
                     <p id="responseMessage2" class="text-2"></p>
                     <form id="contactForm2">
                         <input
@@ -756,7 +796,7 @@
                 </div>
             </section>
         </main>
-        <footer class="light-section">
+        <footer>
             <a href="#" class="text-2 no-link-style"
                 >Политика обработки персональных данных</a
             >
