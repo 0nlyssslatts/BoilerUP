@@ -687,7 +687,6 @@ footer {
     .scnd-carousel {
         height: 12rem;
         grid-template-columns: repeat(3, 18rem);
-        place-self: center;
     }
 
     .container-black {
@@ -732,6 +731,10 @@ footer {
 @media (min-width: 57.5rem) {
     main {
         max-width: 75rem;
+    }
+
+    .scnd-carousel {
+        place-self: center;
     }
 
     .red-container-wrapper {

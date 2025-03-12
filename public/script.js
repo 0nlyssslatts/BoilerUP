@@ -19,7 +19,6 @@ const aboutText = document.getElementById("about-text");
 const aboutButton = document.getElementById("about-button");
 //CAROUSEL
 const carousels = document.querySelectorAll("#carousel");
-const carouselBmk = document.getElementById("carousel-bmk");
 
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
@@ -160,15 +159,32 @@ aboutButton.addEventListener("click", function (event) {
         : (event.target.innerText = "ПОДРОБНЕЕ");
 });
 
+function scrollHandler(event, carousel) {
+    if (event.deltaY > 0 || event.deltaX > 0) {
+        carousel.scrollLeft += 200;
+        event.preventDefault();
+    } else {
+        carousel.scrollLeft -= 200;
+        event.preventDefault();
+    }
+}
+
 carousels.forEach((carousel) => {
     carousel.addEventListener("wheel", function (e) {
-        if (e.deltaY > 0 || e.deltaX > 0) {
-            // ЧЕ ДЕЛАТЬ С Y
-            carousel.scrollLeft += 200;
-            e.preventDefault();
-        } else {
-            carousel.scrollLeft -= 200;
-            e.preventDefault();
+        if (
+            main.offsetWidth < 1220 &&
+            (carousel === carousels[0] || carousel === carousels[3])
+        ) {
+            scrollHandler(e, carousel);
+        }
+        if (main.offsetWidth < 992 && carousel === carousels[1]) {
+            scrollHandler(e, carousel);
+        }
+        if (main.offsetWidth < 768 && carousel === carousels[2]) {
+            scrollHandler(e, carousel);
+        }
+        if (carousel === carousels[4]) {
+            scrollHandler(e, carousel);
         }
     });
 });
