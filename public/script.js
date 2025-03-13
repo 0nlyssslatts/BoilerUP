@@ -141,11 +141,11 @@ aboutButton.addEventListener("click", function (event) {
 });
 function scrollHandler(event, carousel) {
     if (event.deltaY > 0 || event.deltaX > 0) {
+        event.preventDefault();
         carousel.scrollLeft += 200;
-        event.preventDefault();
     } else {
-        carousel.scrollLeft -= 200;
         event.preventDefault();
+        carousel.scrollLeft -= 200;
     }
 }
 carousels.forEach((carousel) => {
