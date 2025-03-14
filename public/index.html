@@ -64,7 +64,7 @@
                     "addressCountry": "RU"
                 },
                 "telephone": "+7 (985) 922-47-65",
-                "email": "boilerup@mail.ru",
+                "email": "boilerup@yandex.ru",
                 "openingHoursSpecification": [
                     {
                         "@type": "OpeningHoursSpecification",
@@ -136,7 +136,7 @@
                             width="44"
                             height="44"
                     /></a>
-                    <a href="mailto:boilerup@mail.ru" target="_blank"
+                    <a href="mailto:boilerup@yandex.ru" target="_blank"
                         ><img
                             src="./img/mail.svg"
                             alt="email"
@@ -177,7 +177,7 @@
                                 alt="whatsup"
                                 loading="lazy"
                         /></a>
-                        <a href="mailto:boilerup@mail.ru" target="_blank"
+                        <a href="mailto:boilerup@yandex.ru" target="_blank"
                             ><img
                                 src="./img/mail.svg"
                                 alt="email"
@@ -200,8 +200,12 @@
         <main id="main">
             <section class="dark-section">
                 <div class="blick"></div>
-                <div class="red-container-wrapper">
-                    <h1 class="h1 element-to-animate-left">
+                <div
+                    class="red-container-wrapper"
+                    itemscope
+                    itemtype="http://schema.org/LocalBusiness"
+                >
+                    <h1 class="h1 element-to-animate-left" itemprop="name">
                         АРЕНДА И ПРОДАЖА<br />БЛОЧНО-МОДУЛЬНЫХ КОТЕЛЬНЫХ
                     </h1>
                     <div class="img-wrapper">
@@ -228,17 +232,21 @@
                             </a>
                         </article>
                         <article class="frst-carousel-item">
-                            <h2 class="h1">Фиксированная цена на топливо</h2>
+                            <h2 class="h1" itemprop="description">
+                                Фиксированная цена на топливо
+                            </h2>
                             <p class="text-1">
                                 забудьте о колебаниях цен в течение всего сезона
                             </p>
                         </article>
                         <article class="frst-carousel-item">
-                            <h2 class="h1">20% скидка</h2>
+                            <h2 class="h1" itemprop="description">
+                                20% скидка
+                            </h2>
                             <p class="text-1">на аренду модульных котельных</p>
                         </article>
                         <article class="frst-carousel-item">
-                            <h2 class="h1">
+                            <h2 class="h1" itemprop="description">
                                 Бесплатная доставка готовой котельной
                             </h2>
                         </article>
@@ -415,48 +423,71 @@
                     </div>
                     <p id="responseMessage1" class="text-2"></p>
                     <form id="contactForm1">
+                        <label for="name" class="text-1">Имя:</label>
                         <input
-                            class="text-1"
+                            id="name"
+                            class="text-1 dark-section"
                             type="text"
                             name="name"
-                            placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                            placeholder="Введите ваше имя"
                             required
+                            aria-label="Пожалуйста, введите ваше имя."
                         />
+
+                        <label for="tel" class="text-1">Телефон:</label>
                         <input
-                            class="text-1"
+                            id="tel"
+                            class="text-1 dark-section"
                             type="tel"
                             name="tel"
-                            placeholder="НОМЕР ТЕЛЕФОНА"
+                            placeholder="Номер телефона"
                             required
+                            aria-label="Введите ваш номер телефона."
                         />
+
+                        <label for="email" class="text-1">E-mail:</label>
                         <input
-                            class="text-1"
+                            id="email"
+                            class="text-1 dark-section"
                             type="email"
                             name="email"
-                            placeholder="ВАШ E-MAIL"
+                            placeholder="Ваш e-mail"
                             required
+                            aria-label="Пожалуйста, введите ваш e-mail."
                         />
+
                         <div>
                             <input
                                 type="checkbox"
                                 required
                                 name="checkbox"
-                                class="text-2"
+                                id="policyCheckbox"
+                                aria-labelledby="policyLabel"
                             />
-                            <label for="checkbox" class="text-2 dark-text"
-                                >Нажимая на кнопку “Получить консультацию”, я
+                            <label
+                                for="policyCheckbox"
+                                id="policyLabel"
+                                class="text-2 dark-text"
+                            >
+                                Нажимая на кнопку “Получить консультацию”, я
                                 соглашаюсь с
                                 <a
-                                    href=""
+                                    href="#"
                                     class="no-link-style"
                                     style="text-decoration: underline"
-                                    >Политикой конфиденциальности компании</a
-                                >.</label
-                            >
+                                >
+                                    Политикой конфиденциальности компании
+                                </a>
+                                .
+                            </label>
                         </div>
 
-                        <button type="submit" class="h1">
-                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        <button
+                            type="submit"
+                            class="h1"
+                            aria-label="Отправить форму для получения консультации"
+                        >
+                            Получить консультацию
                         </button>
                     </form>
                 </article>
@@ -753,9 +784,9 @@
                         <span class="text-1">E-Mail:</span>
                         <a
                             class="text-2 no-link-style"
-                            href="mailto:boilerup@mail.ru"
+                            href="mailto:boilerup@yandex.ru"
                             target="_blank"
-                            >boilerup@mail.ru</a
+                            >boilerup@yandex.ru</a
                         >
                     </article>
                     <article>
@@ -786,7 +817,7 @@
                             alt="whatsup"
                             loading="lazy"
                     /></a>
-                    <a href="mailto:boilerup@mail.ru" target="_blank"
+                    <a href="mailto:boilerup@yandex.ru" target="_blank"
                         ><img src="./img/mail.svg" alt="email" loading="lazy"
                     /></a>
                 </div>
@@ -801,48 +832,71 @@
                     </div>
                     <p id="responseMessage2" class="text-2"></p>
                     <form id="contactForm2">
+                        <label for="name" class="text-1">Имя:</label>
                         <input
-                            class="text-1 black-text"
+                            id="name"
+                            class="text-1"
                             type="text"
                             name="name"
-                            placeholder="ВВЕДИТЕ ВАШЕ ИМЯ"
+                            placeholder="Введите ваше имя"
                             required
+                            aria-label="Пожалуйста, введите ваше имя."
                         />
+
+                        <label for="tel" class="text-1">Телефон:</label>
                         <input
-                            class="text-1 black-text"
+                            id="tel"
+                            class="text-1"
                             type="tel"
                             name="tel"
-                            placeholder="НОМЕР ТЕЛЕФОНА"
+                            placeholder="Номер телефона"
                             required
+                            aria-label="Введите ваш номер телефона."
                         />
+
+                        <label for="email" class="text-1">E-mail:</label>
                         <input
-                            class="text-1 black-text"
+                            id="email"
+                            class="text-1"
                             type="email"
                             name="email"
-                            placeholder="ВАШ E-MAIL"
+                            placeholder="Ваш e-mail"
                             required
+                            aria-label="Пожалуйста, введите ваш e-mail."
                         />
+
                         <div>
                             <input
                                 type="checkbox"
                                 required
                                 name="checkbox"
-                                class="text-2"
+                                id="policyCheckbox"
+                                aria-labelledby="policyLabel"
                             />
-                            <label for="checkbox" class="text-2 black-text"
-                                >Нажимая на кнопку “Получить консультацию”, я
+                            <label
+                                for="policyCheckbox"
+                                id="policyLabel"
+                                class="text-2 black-text"
+                            >
+                                Нажимая на кнопку “Получить консультацию”, я
                                 соглашаюсь с
                                 <a
-                                    href=""
+                                    href="#"
                                     class="no-link-style"
                                     style="text-decoration: underline"
-                                    >Политикой конфиденциальности компании</a
-                                >.</label
-                            >
+                                >
+                                    Политикой конфиденциальности компании
+                                </a>
+                                .
+                            </label>
                         </div>
 
-                        <button type="submit" class="h1">
-                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                        <button
+                            type="submit"
+                            class="h1"
+                            aria-label="Отправить форму для получения консультации"
+                        >
+                            Получить консультацию
                         </button>
                     </form>
                 </article>
