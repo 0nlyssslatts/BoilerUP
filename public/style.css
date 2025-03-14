@@ -219,17 +219,27 @@ form > button {
     margin-top: 0 !important;
 }
 
-form input {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
     border-radius: 12px;
     padding: 1rem;
     background-color: rgba(97, 98, 99, 0.22);
     border: 1px solid rgba(155, 163, 185, 0.2);
-    color: var(--light-text-color);
 }
-.text-2 input[type="checkbox"] {
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
     appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid #000;
+    background-color: var(--light-bacground-color);
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--red-color);
 }
 
 .rotate {
