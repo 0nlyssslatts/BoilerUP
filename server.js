@@ -11,10 +11,25 @@ const PORT = process.env.PORT;
 app.use(bodyParser.json());
 app.use(express.static("./public"));
 
-app.post("/submit", (req, res) => {
-    const { name, tel, email } = req.body;
-    mailer(name, tel, email);
-    res.json({ message: "Сообщение успешно отправлено!" });
+app.post("/submit", async (req, res) => {
+    try {
+        const { name, tel, email } = req.body;
+
+        await mailer(name, tel, email);
+
+        res.json({
+            success: true,
+            message:
+                "Ваша заявка принята, мы свяжемся с вами в течение одного часа!",
+        });
+    } catch (error) {
+        console.error("Ошибка отправки сообщения:", error);
+
+        res.status(500).json({
+            success: false,
+            message: "Ошибка отправки сообщения. Попробуйте позже.",
+        });
+    }
 });
 
 app.listen(PORT, () => {
