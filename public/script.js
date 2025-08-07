@@ -12,6 +12,11 @@ const sign = document.querySelectorAll("#sign");
 const aboutText = document.getElementById("about-text");
 const aboutButton = document.getElementById("about-button");
 const carousels = document.querySelectorAll("#carousel");
+const topArrow = document.getElementById("top-arrow");
+const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
+
+closeMobileMenuBtn.onclick = () => closeMenu();
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -59,6 +64,9 @@ function formHandle(num) {
         event.preventDefault();
         const formData = new FormData(this);
         const data = {};
+        const responseMessage = document.getElementById(
+            `responseMessage${num}`
+        );
 
         formData.forEach((value, key) => {
             data[key] = value;
@@ -73,9 +81,22 @@ function formHandle(num) {
         })
             .then((response) => response.json())
             .then((data) => {
-                document.getElementById(`responseMessage${num}`).innerText =
-                    data.message;
+                responseMessage.innerText = data.message;
+                responseMessage.classList.add("show");
                 this.reset();
+
+                setTimeout(() => {
+                    responseMessage.classList.remove("show");
+                }, 10000);
+            })
+            .catch((error) => {
+                console.error(error);
+                responseMessage.innerText = error.message;
+                responseMessage.classList.add("show");
+
+                setTimeout(() => {
+                    responseMessage.classList.remove("show");
+                }, 10000);
             });
     };
 }
@@ -86,17 +107,26 @@ menuToggle.onclick = function () {
     menuToggle.classList.add("menu-icon-active");
     navMobile.classList.add("mobile-nav-active");
 };
+
+function checkScrollPosition() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+    const triggerPoint = documentHeight - windowHeight - 1000;
+
+    if (scrollTop >= triggerPoint) {
+        topArrow.classList.add("show");
+    } else {
+        topArrow.classList.remove("show");
+    }
+}
 window.addEventListener("resize", function () {
     if (navMobileState && window.innerWidth >= 840) {
         closeMenu();
     }
 });
 window.addEventListener("scroll", () => {
-    if (navMobileState) {
-        closeMenu();
-    }
-});
-main.addEventListener("click", function () {
+    checkScrollPosition();
     if (navMobileState) {
         closeMenu();
     }
