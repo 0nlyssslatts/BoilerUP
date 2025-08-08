@@ -13,9 +13,9 @@ app.use(express.static("./public"));
 
 app.post("/submit", async (req, res) => {
     try {
-        const { name, tel, email } = req.body;
+        const { name, tel, email, question } = req.body;
 
-        await mailer(name, tel, email);
+        await mailer(name, tel, email, question);
 
         res.json({
             success: true,
