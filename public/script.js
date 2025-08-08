@@ -72,6 +72,7 @@ function formHandle(num) {
             data[key] = value;
         });
 
+        console.log(data);
         fetch("/submit", {
             method: "POST",
             headers: {
