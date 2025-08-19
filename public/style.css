@@ -575,7 +575,7 @@ main {
 }
 
 .relevance ul li::marker {
-    content: "🔶"; /* Кастомный символ */
+    content: "🔶 ";
 }
 
 .service-wrapper {
