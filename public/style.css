@@ -480,9 +480,9 @@ main {
 }
 
 .scnd-carousel {
-    height: 10rem;
+    height: 12rem;
     display: grid;
-    grid-template-columns: repeat(3, 15rem);
+    grid-template-columns: repeat(6, 15rem);
     overflow-x: auto;
     gap: 1rem;
     margin: 1rem 0;
@@ -561,6 +561,21 @@ main {
 .bmk-card-list-active {
     display: block;
     opacity: 1;
+}
+
+.relevance {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.relevance ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.relevance ul li::marker {
+    content: "🔶"; /* Кастомный символ */
 }
 
 .service-wrapper {
@@ -779,7 +794,7 @@ footer {
     }
 
     .scnd-carousel {
-        height: 12rem;
+        height: 22rem;
         grid-template-columns: repeat(3, 18rem);
     }
 
